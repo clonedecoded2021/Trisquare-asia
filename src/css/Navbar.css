@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.95rem;
+    font-weight: 550 !important;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    padding-right: 50px;
+}
+.navbar__components{
+    display: flex;
+    margin-right: 25px;
+    background: transparent;
+}
+.navbar__component{
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    
+    color:  rgb(2, 100, 2);
+    transition: 0.5s;
+    width: auto;
+    text-align: center;
+}
+/* .navbar__component:hover{
+    text-decoration: none;
+    color: rgb(9, 184, 3);
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 2px gray;
+    border-radius: 5px;
+} */
+/* .sell__link{
+    border-radius: 5px;
+    color: rgb(2, 100, 2);
+    margin-left: 15px;
+}
+.admin__link {
+    border-radius: 5px;
+    color: rgb(2, 100, 2);
+    margin-left: 15px;
+    background: transparent;
+}
+.login__link{
+    border-radius: 5px;
+    color: rgb(2, 100, 2);
+    margin-left: 15px;
+}
+.sell__link:hover,
+.admin__link:hover, 
+.login__link:hover{
+    color: rgb(2, 2, 165);
+} */
+.linksDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.5s;
+    margin: 0 15px;
+    /* justify-content: center; */
+}
+.linksDiv:hover .marker{
+    transform: translateX(80%);
+    background: rgb(2, 2, 165);
+}
+.linksDiv:hover .navbar__component{
+    color: rgb(2, 2, 165);
+}
+.marker{
+    display: inline-block;
+    background: transparent;
+    width: 17px;
+    height: 2.5px;
+    border-radius: 30px;
+    transition: all 0.5s;
+    outline: none;
+    outline-style: none;
+    border: 0px;
+}
+@media only screen and (max-width: 600px){
+    .navbar{
+        padding-right: 0px;
+    }
+    .navbar__component{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        letter-spacing: 1px;
+        color:  rgb(2, 100, 2);
+        transition: 0.5s;
+        font-size: 0.6rem;
+        font-weight: 400 ;
+        width: auto;
+        text-align: center;
+        padding-left: 10px;
+    }
+    .linksDiv{
+        margin: 0 0px;
+        /* justify-content: center; */
+    }
+    .linksDiv:hover .marker{
+        transform: translateX(90%);
+        background: rgb(2, 2, 165);
+    }
+    .linksDiv:hover .navbar__component{
+        color: rgb(2, 2, 165);
+    }
+    .marker{
+        display: inline-block;
+        background: transparent;
+        width: 9px;
+        height: 2px;
+        border-radius: 30px;
+        transition: all 0.5s;
+        outline: none;
+        outline-style: none;
+        border: 0px;
+    }
+}
