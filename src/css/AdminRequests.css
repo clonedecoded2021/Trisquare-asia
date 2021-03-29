@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 .admin_Request_Modal{
@@ -146,6 +147,8 @@
     }
 }
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 @media only screen and (max-width: 600px){
 .request__para{
     font-size: 0.6rem !important;
@@ -156,6 +159,7 @@
     .requestPage__button{
         font-size: 0.6rem !important;
     }
+<<<<<<< HEAD
     .admin_Request_Modal{
         top: 50%;
         height: 50%;
@@ -200,4 +204,6 @@
         height: 150px;
     }
     
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }

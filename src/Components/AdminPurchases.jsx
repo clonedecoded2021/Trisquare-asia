@@ -7,6 +7,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { GiSplitCross } from 'react-icons/gi';
 import axios from 'axios';
 
+<<<<<<< HEAD
 const ProductDetails = ({ Pid, productImage, productName, email, mob, product, userName , orderDate}) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [status, setStatus] = useState("");
@@ -23,10 +24,18 @@ const ProductDetails = ({ Pid, productImage, productName, email, mob, product, u
     const productStatus = (e) => {
         e.preventDefault();
         setStatus(e.target.value);
+=======
+const ProductDetails = ({ Pid, productImage, productName, email, mob, product, userName }) => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const decline = () => {
+        axios.delete(`https://trisquare.asia/api/order_history/delete/${Pid}`).then((res) => console.log("deleted"))
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
 
     return (
         <div className="admin__container">
+<<<<<<< HEAD
             <div className='admin__products admin__mainPanel'>
                 <div className="admin__divRow1">
                     <img className="productImage" style={{ cursor: "pointer", border: "1px solid gray", padding: "3px", borderRadius: "5px" }} onClick={() => setModalIsOpen(true)} src={process.env.PUBLIC_URL + `/uploads/${productImage}`} alt="image" />
@@ -48,6 +57,17 @@ const ProductDetails = ({ Pid, productImage, productName, email, mob, product, u
                 </div>
 
 
+=======
+            <div className='admin__products'>
+                <img className="productImage" style={{ cursor: "pointer", border: "1px solid gray", padding: "3px", borderRadius: "5px" }} onClick={() => setModalIsOpen(true)} src={process.env.PUBLIC_URL + `/uploads/${productImage}`} alt="image" />
+                <div className="admin__productAbout">
+                    <h4 className="admin__productName purchases__heading">{productName}</h4>
+                    <p className="orderModal__productDescription para">{`${email} purchased ${product.productQuantity} units of ${productName}`}</p>
+                </div>
+                <div className="admin__buttons">
+                    <button className="admin__ignore purchases__button" onClick={decline}>REMOVE</button>
+                </div>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 <Modal
                     className="orderModal purchase__modal"
                     isOpen={modalIsOpen}
@@ -73,7 +93,10 @@ const ProductDetails = ({ Pid, productImage, productName, email, mob, product, u
                         <div className="buyerDetails__rows"><h5 className="buyerDetalis__header">Address :-  </h5><span className="buyerDetails__span">{product.address}</span></div>
                         <div className="buyerDetails__rows"><h5 className="buyerDetalis__header">Pin Code :- </h5><span className="buyerDetails__span">{product.pin}</span></div>
                         <div className="buyerDetails__rows"><h5 className="buyerDetalis__header">Country :- </h5><span className="buyerDetails__span">{product.country}</span></div>
+<<<<<<< HEAD
                         <div className="buyerDetails__rows"><h5 className="buyerDetalis__header">Date :- </h5><span className="buyerDetails__span">{order_date}</span></div>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     </div>
                     <div className="orderModal__sellerDescription">
                         <div className="orderModal__sellerEmail para">E-Mail :- {email}</div>
@@ -108,7 +131,10 @@ const AdminPurchases = ({ products }) => {
     useEffect(() => {
         axios.get("https://trisquare.asia/api/orders_history").then(res => {
             setOrderHistory(res.data)
+<<<<<<< HEAD
             console.log(res.data)
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         })
     }, [])
     if (admin) {
@@ -132,8 +158,11 @@ const AdminPurchases = ({ products }) => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption active"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__navbar" style={{ display: `${disp}`, transition: "0.3s" }}>
@@ -142,17 +171,26 @@ const AdminPurchases = ({ products }) => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption active"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__mainPage">
                     <h4 className="admin__heading">Items  Ordered</h4>
+<<<<<<< HEAD
                     {orderHistory && orderHistory.sort((a,b) => {
                         return new Date(b.orderDate) - new Date(a.orderDate)
                     }).map((purchase) =>
                     (
                         <ProductDetails key={purchase.id} Pid={purchase.id} productImage={purchase.product_image} productName={purchase.productName} email={purchase.email} mob={purchase.contact} product={purchase} userName={purchase.userName} orderDate={purchase.orderDate}/>)
+=======
+                    {orderHistory && orderHistory.map((purchase) =>
+                    (
+                        <ProductDetails key={purchase.id} Pid={purchase.id} productImage={purchase.product_image} productName={purchase.productName} email={purchase.email} mob={purchase.contact} product={purchase} userName={purchase.userName} />)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     )}
                 </div>
             </div>

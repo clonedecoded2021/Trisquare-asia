@@ -8,7 +8,11 @@ const ForgotPage = () => {
     const [email, setEmail] = useState("")
     const reset = () => {
         axios.post("https://trisquare.asia/api/forgotPassword", { email: email }).then(() => {
+<<<<<<< HEAD
             alert("Reset link has been sent to your email.")
+=======
+            console.log("Reset link has been sent to your email.")
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         })
     }
     return (

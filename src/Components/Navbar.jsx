@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import { useDispatch, connect } from 'react-redux';
 import "../css/Navbar.css";
 import { Link, useHistory } from "react-router-dom";
@@ -70,6 +71,24 @@ const Navbar = (props) => {
   useEffect(() => {
     const loginstatus = localStorage.getItem("_trisquarestorage")
     if (loginstatus) {
+=======
+import { useDispatch, connect } from 'react-redux'
+import "../css/Navbar.css";
+import { Link } from "react-router-dom";
+import reducer from '../reducer'
+
+
+const Navbar = (loginValue) => {
+  const dispatch = useDispatch(reducer)
+  const [userData, setUserData] = useState(false)
+  const [admin, setAdmin] = useState(false)
+  const [userType, setUserType] = useState("Buyer")
+  
+  useEffect(() => {
+    const loginstatus = localStorage.getItem("_trisquarestorage")
+    if (loginstatus) {
+      
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       const newValue = JSON.parse(loginstatus)
       if (newValue.data.message) {
         alert("user is not valid");
@@ -83,13 +102,20 @@ const Navbar = (props) => {
           userOut: false,
         })
       }
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     } else {
       setUserData(false)
       setAdmin(false)
     }
   }, [loginValue])
+<<<<<<< HEAD
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   const signOut = () => {
     localStorage.removeItem("_trisquarestorage")
     setUserData(false)
@@ -98,6 +124,7 @@ const Navbar = (props) => {
       userIn: false,
       userOut: true,
     })
+<<<<<<< HEAD
     history.push("/buyer/login")
     window.location.reload()
   }
@@ -173,6 +200,20 @@ const Navbar = (props) => {
         }
 
       </div>
+=======
+  }
+
+  return (
+    <div className="navbar">
+      <nav className="navbar__components">
+        <div className="linksDiv"><div className="marker"></div><a href='https://trisquare.asia/en/' className="navbar__component admin__link">HOME</a></div>
+
+        <div className="linksDiv"><div className="marker"></div><Link to='/buyer' className="navbar__component admin__link">BUY</Link></div>
+        {admin ? <div className="linksDiv"><div className="marker"></div><Link to='/buyer/admin' className="navbar__component admin__link">ADMIN</Link></div> : ""}
+        {userData ? userType === "Buyer" ? "" : (<div className="linksDiv"><div className="marker"></div><Link to='/buyer/sellPage' className="navbar__component sell__link">SELL</Link></div>) : ""}
+        {userData ? <div className="linksDiv"><div className="marker"></div><Link to='/buyer' className="navbar__component login__link" onClick={signOut}>LOG OUT</Link></div> : <div className="linksDiv"><div className="marker"></div><Link to='/buyer/login' className="navbar__component login__link">LOGIN</Link></div>}
+      </nav>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     </div>
   );
 };

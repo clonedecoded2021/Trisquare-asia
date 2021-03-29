@@ -24,7 +24,10 @@ function CartPage({ userIn, userOut, price }) {
     const [email, setEmail] = useState("")
     const [userId, setUserId] = useState("")
     const [userName, setUserName] = useState("")
+<<<<<<< HEAD
     const [userType, setUserType] = useState("")
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     useEffect(() => {
         axios.get("https://trisquare.asia/api/product_data").then((res) => {
             setProducts(res.data)
@@ -41,8 +44,11 @@ function CartPage({ userIn, userOut, price }) {
             setUserName(newValue.data[0].username)
             setEmail(newValue.data[0].email)
             setEmailVerified(newValue.data[0].emailVerified)
+<<<<<<< HEAD
             setUserId(newValue.data[0].id)
             setUserType(newValue.data[0].userType)
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         } else {
             setUserData(false)
         }
@@ -57,6 +63,7 @@ function CartPage({ userIn, userOut, price }) {
             const sortedData = [...data];
             return sortedData.sort(function (a, b) {
                 if (val === "") {
+<<<<<<< HEAD
                     return a.time > b.time ? -1 : 1;
                 } else if (val === "price__asc") {
                     return a.price1 > b.price1 ? 1 : -1;
@@ -70,19 +77,54 @@ function CartPage({ userIn, userOut, price }) {
             })
         } else {
             return
+=======
+                    console.log("filter na ba ")
+                    console.log(proProduct)
+                    return a.product.time > b.product.time ? -1 : 1;
+                } else if (val === "price__asc") {
+                    console.log("filter ==== asce")
+                    console.log(a.product.price1)
+                    console.log(b.product.price1)
+                    return a.product.price1 > b.product.price1 ? 1 : -1;
+                } else if (val === "price__des") {
+                    console.log("filter ==== desc")
+                    return a.product.price1 > b.product.price1 ? -1 : 1;
+                } else if (val === "solds") {
+                    console.log("filter ==== solds")
+                    return a.product.soldProducts > b.product.soldProducts ? -1 : 1;
+                } else if (val === "duration") {
+                    console.log("filter ==== duration")
+                    return a.product.orderDeadline > b.product.orderDeadline ? 1 : -1;
+                }
+            })
+        } else {
+            console.log("data na bate")
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         }
     };
     const verify = () => {
         setModalIsOpen(false)
+<<<<<<< HEAD
         axios.post(`https://trisquare.asia/api/email_verification/${email}/${userId}`, { userName: userName, userType: userType })
         history.push('/buyer/')
+=======
+        axios.post(`https://trisquare.asia/api/email_verification/${email}/${userId}`, { userName: userName })
+        history.push('/buyer')
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         window.location.reload()
     }
     const searchFunction = (e) => {
         setSearchTerm(e.target.value)
         const search = e.target.value
+<<<<<<< HEAD
         products && setProducts(products.filter((product) => {
             if (search == "") {
+=======
+        console.log(search)
+        products && setProducts(products.filter((product) => {
+            if (search == "") {
+                console.log("run hole baa")
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 return product
             } else if (
                 product.productName.toLowerCase()
@@ -165,17 +207,25 @@ function CartPage({ userIn, userOut, price }) {
                             onRequestClose={() => setModalIsOpen(false)}
                         >
                             <h2 className="orderModal__heading cartPage__modalHeader orderModal__heading1"  >Your E-Mail is not verified</h2>
+<<<<<<< HEAD
                             <p className="orderModal__heading orderModal__headingPara orderModal__heading1" >Please press the button below to start the verification process, a message will be sent to your email account, please verify to use this website. </p>
+=======
+                            <p className="orderModal__heading orderModal__heading1" >Please press the button below to start the verification process, a message will be sent to your email account, please verify to use this website. </p>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                             <div className="cartPage__modalButtons verify__buttons">
                                 <div>
                                     <button className="cartPage__modalButton modalButton1 modalButton1s" onClick={verify} >Verify E-Mail</button>
 
                                 </div>
                                 <div>
+<<<<<<< HEAD
                                     <Link to="/buyer/" className="cartPage__modalButton modalButton2 modalButton1s" onClick={() => {
                                         history.push("/buyer/")
                                         setModalIsOpen(false)
                                     }}>Close</Link>
+=======
+                                    <Link to="/buyer" className="cartPage__modalButton modalButton2 modalButton1s" onClick={() => window.location.reload()}>Close</Link>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
                                 </div>
                             </div>

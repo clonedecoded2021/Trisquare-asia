@@ -1,7 +1,11 @@
 const initialState = [{ data: "", country: "", login: false, approval: null, ProductId: "", searchValue: "", fitlter: ["suraj", "aalok"], userData: null, userIn: false, userOut: false }];
 
 const rootReducer = (state = initialState, action) => {
+<<<<<<< HEAD
   // console.log(action)
+=======
+  console.log(action)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   switch (action.type) {
     case "new": {
       return {

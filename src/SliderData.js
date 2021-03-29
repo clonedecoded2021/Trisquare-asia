@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import img1 from './Images/croped_img1.jpeg';
 import img2 from './Images/croped_img2.jpeg';
 import img3 from './Images/croped_img3.jpeg';
+=======
+import img1 from './Images/img1.jpeg';
+import img2 from './Images/img2.jpeg';
+import img3 from './Images/img3.jpeg';
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
 export const HomeSlides = [
   {

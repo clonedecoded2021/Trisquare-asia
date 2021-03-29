@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .howItWorks{
     display: flex;
     flex-direction: column;
@@ -11,7 +14,10 @@
     width: 100%;
     margin-top: -40px;
     height: 570px !important;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .howItWorks__contents{
     display: flex;
@@ -19,7 +25,10 @@
     align-items: center;
     width: 100vw;
     padding: 10px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .howItWorks__content{
     display: flex;
@@ -30,7 +39,10 @@
     text-align: center;
     font-size: 1.5rem;
     width: 400px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .howItWorks__icons{
     font-size: 70px!important;
@@ -39,7 +51,10 @@
     text-align: center;
     font-size: 2rem;
     margin-top: 20px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .howItWorks__button{
     border: 3px solid black;
@@ -68,7 +83,10 @@
     align-items: center;
     justify-content: space-around;
     padding: 25px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .buying__img{
     height: auto;
@@ -84,16 +102,23 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .howItWorks__whyMainHeading{
     color: white;
     font-size: 1.5rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .whyTrisquare > h4{
     color: white;
     font-size: 0.9rem;
+<<<<<<< HEAD
     margin-top: 5px;
     margin-bottom: -5px;
     font-family: 'Poppins', sans-serif;
@@ -107,12 +132,26 @@
 .socialMission{
     height: 650px;
     background: white;
+=======
+    margin-top: 12px;
+    margin-bottom: -12px;
+}
+.whyTrisquare > h5{
+    font-size: 1.2rem;
+    margin-top: -12px;
+    margin-bottom: 12px;
+}
+.socialMission{
+    height: 650px;
+    background: linear-gradient(rgb(5, 2, 185), rgb(0, 167, 245));
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     display: flex;
     padding: 30px;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: space-between;
+<<<<<<< HEAD
     color: black;
     font-family: 'Poppins', sans-serif;
 }
@@ -134,6 +173,24 @@
     font-weight: 300;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
+=======
+}
+.socialMission__heading > h1{
+    font-size: 1.7rem;
+    color: white;
+}
+.socialMission > h5{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.socialMission > h5{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .buying__logo{
     height: 100px;
@@ -149,6 +206,7 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .whyTrisquareSell > h4{
@@ -158,12 +216,25 @@
 }
 .whyTrisquareSell > h5{
     font-size: 1rem;
+=======
+}
+.whyTrisquareSell > h4{
+    color: white;
+    font-size: 1.2rem;
+    ;
+}
+.whyTrisquareSell > h5{
+    font-size: 1.2rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     
 }
 @media only screen and (max-width: 600px){
     .howItWorks{
         overflow-x: hidden;
+<<<<<<< HEAD
         margin-top: 0rem;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .howItWorks__heading{
         font-size: 1.3rem;
@@ -212,7 +283,11 @@
         margin: auto;
     }
     .whyTrisquare{
+<<<<<<< HEAD
         height: 575px;
+=======
+        height: 500px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         padding: 15px;
     }
     .howItWorks__whyMainHeading{
@@ -224,6 +299,7 @@
         color: white;
         font-size: 0.55rem;
         line-height: 1rem;
+<<<<<<< HEAD
         margin-top: 5px;
         margin-bottom: -5px;
     }
@@ -231,6 +307,15 @@
         font-size: 0.7rem;
         margin-top: -5px;
         margin-bottom: 5px;
+=======
+        margin-top: 7px;
+        margin-bottom: -7px;
+    }
+    .whyTrisquare > h5{
+        font-size: 0.7rem;
+        margin-top: -7px;
+        margin-bottom: 7px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .socialMission{
         height: 450px;
@@ -242,7 +327,11 @@
     }
     .socialMission > h5{
         font-size: 0.6rem;
+<<<<<<< HEAD
         color: black;
+=======
+        color: white;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         font-weight: 100;
         letter-spacing: 1px;
     }
@@ -276,6 +365,7 @@
     .selling__img{
         margin-bottom: -100px;
     }
+<<<<<<< HEAD
 }
 
 @media only screen and (max-width: 600px){
@@ -287,4 +377,6 @@
         height: 535px;
         padding: 10px;
     }
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
+=======
+import React from 'react';
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 import { CgNotes } from 'react-icons/cg';
 import { ImEarth } from 'react-icons/im';
 import { BsGraphUp } from 'react-icons/bs';
@@ -7,6 +11,7 @@ import { HomeSlides } from '../SliderData';
 import Selling from '../Images/Selling.png'
 import { Link } from 'react-router-dom';
 import Bullets from '../Images/bullets.png';
+<<<<<<< HEAD
 import Login from './Login';
 
 const SellPage = () => {
@@ -28,6 +33,10 @@ const SellPage = () => {
             return
         }
     }
+=======
+
+const SellPage = () => {
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     return (
         <div className="sellPage">
             <p id="timers">
@@ -63,7 +72,11 @@ const SellPage = () => {
                     </div>
                 </div>
                 <div>
+<<<<<<< HEAD
                     <a href="https://trisquare.asia/buyer/info/sell.html" ><button className="howItWorks__button">FIND OUT MORE</button></a>
+=======
+                    <a href="https://trisquare.asia/en/content/4-about-us" ><button className="howItWorks__button">Find Out More</button></a>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 </div>
             </section>
             <section className="buyingSection sellSection">
@@ -74,13 +87,18 @@ const SellPage = () => {
                     <img src={Selling} alt="" className="buying__img selling__img" />
                 </div>
                 <div>
+<<<<<<< HEAD
                     <Link to="/buyer/sell" onClick={notAuthorized}><button className="howItWorks__button" >Sell</button></Link>
+=======
+                    <Link to="/buyer/sell"><button className="howItWorks__button">Sell</button></Link>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 </div>
             </section>
             <section className="whyTrisquareSell">
                 <div className="howItWorks__whyHeading">
                     <h1 className="howItWorks__whyMainHeading">WHY SELL WITH TRISQUARE?</h1>
                 </div>
+<<<<<<< HEAD
                 <img className="bulletImage" src={Bullets} />
                 <h4>TRISQUARE INTRODUCES YOU TO THE GROUP-BUY WHOLESALE COMMUNITY</h4>
                 <img className="bulletImage" src={Bullets} />
@@ -90,6 +108,17 @@ const SellPage = () => {
                 <h4>TRISQUARE PRODUCES EXPEDIENTIAL REPEAT ORDERS</h4>
                 <div>
                     <Link to="/buyer/sell" onClick={notAuthorized}><button className="howItWorks__button" >Sell</button></Link>
+=======
+                <img className = "bulletImage" src = {Bullets} />
+                <h4>TRISQUARE INTRODUCES YOU TO THE GROUP-BUY WHOLESALE COMMUNITY</h4>
+                <img className = "bulletImage" src = {Bullets} />
+                <h4>
+                    TRISQUARE REACHES NEW CUSTOMERS, INCREASING YOUR ORDER VOLUMES</h4>
+                    <img className = "bulletImage" src = {Bullets} />
+                <h4>TRISQUARE PRODUCES EXPEDIENTIAL REPEAT ORDERS</h4>
+                <div>
+                    <Link to="/buyer/sell"><button className="howItWorks__button">Sell</button></Link>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 </div>
             </section>
         </div>

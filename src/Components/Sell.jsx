@@ -5,11 +5,19 @@ import Countries from "./Countries";
 import { connect } from "react-redux";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import axios from "axios";
 import Login from './Login'
 
 function Sell({ countryName, userIn, userOut }) {
   const history = useHistory()
+=======
+import Axios from 'axios';
+
+function Sell({ countryName, userIn, userOut }) {
+  const history = useHistory()
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   const [businessName, setBusinessName] = useState("");
   const [email, setEmail] = useState("");
   const [mob, setMob] = useState("");
@@ -43,7 +51,11 @@ function Sell({ countryName, userIn, userOut }) {
   const [units, setUnits] = useState("Units");
   const [length, setLength] = useState("cm");
   const [width, setWidth] = useState("cm");
+<<<<<<< HEAD
   const [weight, setWeight] = useState("gm");
+=======
+  const [weight, setWeight] = useState("g");
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   const [emailVerified, setEmailVerified] = useState(0);
   const [pending, setPending] = useState(true);
   const [continents, setContinents] = useState("");
@@ -65,6 +77,7 @@ function Sell({ countryName, userIn, userOut }) {
   const [userEmail, setUserEmail] = useState()
   const [userId, setUserId] = useState()
   const [userName, setUserName] = useState()
+<<<<<<< HEAD
   const [frPrice1, setFrPrice1] = useState()
   const [frPrice11, setFrPrice11] = useState()
   const [frPrice2, setFrPrice2] = useState()
@@ -80,17 +93,25 @@ function Sell({ countryName, userIn, userOut }) {
   const [friUnits3, setFriUnits3] = useState()
   const [friUnits4, setFriUnits4] = useState()
   const [userApproved, setUserApproved] = useState(0)
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
   const onFileChange = async (e) => {
     const file = e.target.files[0];
     setFileUrl(file)
   };
 
+<<<<<<< HEAD
   // const submission = () => {
   //   // console.log("chal raha hai")
   //   // history.push("/buyer/")
   //   alert("your product has been submitted “Thanks for submitting your product, Admin will now check and verify your post”")
   // };
+=======
+  const submission = () => {
+    return <Redirect to="/buyer/sell" />
+  };
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
   const calculate = (e) => {
     const amount = e.target.value
@@ -134,6 +155,7 @@ function Sell({ countryName, userIn, userOut }) {
             }
             else if (name == "SP7") {
               setSPrice7(result)
+<<<<<<< HEAD
             } else if (name == "FR1") {
               setFrPrice11(result)
             }
@@ -149,17 +171,27 @@ function Sell({ countryName, userIn, userOut }) {
               return
             }
             // console.log(result)
+=======
+            } else {
+              return
+            }
+            console.log(result)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
           });
       }
     }
   }
 
   useEffect(() => {
+<<<<<<< HEAD
     setUserData(false)
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     const loginstatus = localStorage.getItem("_trisquarestorage")
     if (loginstatus) {
       const newValue = JSON.parse(loginstatus)
       setPending(false)
+<<<<<<< HEAD
       setUserData(true)
       setUserId(newValue.data[0].id)
       setUserName(newValue.data[0].username)
@@ -174,6 +206,21 @@ function Sell({ countryName, userIn, userOut }) {
     // console.log(email, userId, userName)
     axios.post(`https://trisquare.asia/api/email_verification/${userEmail}/${userId}`, { userName: userName, userType: userType })
     history.push('/buyer/')
+=======
+      setEmailVerified(newValue.data[0].emailVerified)
+      if (newValue.data[0].emailVerified === 0) {
+        setModalIsOpen(true)
+        setUserId(newValue.data[0].id)
+        setUserName(newValue.data[0].username)
+        setUserEmail(newValue.data[0].email)
+      }
+    }
+  }, [])
+  const verify = () => {
+    setModalIsOpen(false)
+    Axios.post(`https://trisquare.asia/api/email_verification/${userEmail}/${userId}`, { userName: userName })
+    history.push('/buyer')
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     window.location.reload()
   }
 
@@ -203,10 +250,18 @@ function Sell({ countryName, userIn, userOut }) {
   }, [continents])
 
 
+<<<<<<< HEAD
   if (!userData) return <Redirect to="/buyer/login" />
   if (userData) {
     if (emailVerified == 1) {
       if (userApproved == 1) {
+=======
+  if (pending) return <div>Loading...</div>
+  if (!pending) {
+    if (userOut) return <Redirect to="/login" />
+    if (userIn) {
+      if (emailVerified === 1) {
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         return (
           <div className="sell">
             <p id="timers">
@@ -219,17 +274,28 @@ function Sell({ countryName, userIn, userOut }) {
               <h1 className="sell__headingMajor">SUBMISSION</h1>
               <h4 className="sell__headerMinor">
                 LIST YOUR WHOLESALE PRODUCTS BELOW.
+<<<<<<< HEAD
           </h4>
+=======
+        </h4>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
             </div>
             <div className="sell__container">
               <form
                 className="sell__form"
+<<<<<<< HEAD
                 // onSubmit={submission}
                 action="https://trisquare.asia/api/product_data"
                 method="post"
                 encType="multipart/form-data"
               // target="_blank"
                 id = "form1"
+=======
+                onSubmit={submission}
+                action="https://trisquare.asia/api/product_data"
+                method="post"
+                encType="multipart/form-data"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
               >
                 <h1 className="sell__formHeading">PRODUCT SUBMISSION FORM</h1>
                 <input
@@ -262,7 +328,11 @@ function Sell({ countryName, userIn, userOut }) {
                 <div className="sell__product">
                   <label className="sell__productDescription label">
                     Product Description :-
+<<<<<<< HEAD
                   </label>
+=======
+                </label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                   <div className="sell__productImage">
                     <label className="imageLabel">Upload a Product Image : - </label>
                     <div className="file_button_container">
@@ -298,6 +368,7 @@ function Sell({ countryName, userIn, userOut }) {
                       <option value="">Select Product Category</option>
                       <option value="Building & Construction">
                         Building & Construction
+<<<<<<< HEAD
                         </option>
                       <option value="PPE & Medical Equipment">
                         PPE & Medical Equipment
@@ -309,6 +380,19 @@ function Sell({ countryName, userIn, userOut }) {
                       <option value="Food & Product Packaging">
                         Food & Product Packaging
                         </option>
+=======
+                      </option>
+                      <option value="PPE & Medical Equipment">
+                        PPE & Medical Equipment
+                      </option>
+                      <option value="Nails & Cosmetics">Nails & Cosmetics</option>
+                      <option value="Electrical Appliances">
+                        Electrical Appliances
+                      </option>
+                      <option value="Food & Product Packaging">
+                        Food & Product Packaging
+                      </option>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                       <option value="Hair & Hair Products">Hair & Hair Products</option>
                       <option value="Sporting Equipment">Sporting Equipment</option>
                       <option value="Footwear">Footwear</option>
@@ -319,7 +403,10 @@ function Sell({ countryName, userIn, userOut }) {
                       <option value="Textiles">Textiles</option>
                       <option value="Fashion Jewellery">Fashion Jewellery</option>
                       <option value="Promotional & Gifts">Promotional & Gifts</option>
+<<<<<<< HEAD
                       <option value="Services">Services</option>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     </select>
                     <div className="sell__divs">
                       <input
@@ -329,20 +416,32 @@ function Sell({ countryName, userIn, userOut }) {
                         name="productLength"
                         placeholder={`Product Length in ${length}`}
                         value={productLength}
+<<<<<<< HEAD
                         onChange={(e) => {
                           setProductLength(e.target.value)
                         }}
                       />
                       <select id="length"
                         name="length_unit"
+=======
+                        onChange={(e) => setProductLength(e.target.value)}
+                      />
+                      <select id="length"
+                        name="lengthunit"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                         className="inputs1"
                         required
                         value={length}
                         onChange={e => {
                           setLength(e.target.value)
                         }}>
+<<<<<<< HEAD
                         <option value="Cm">cm</option>
                         <option value="M">mtr</option>
+=======
+                        <option value="Cm">Cm</option>
+                        <option value="M">M</option>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
                       </select>
                     </div>
@@ -357,14 +456,23 @@ function Sell({ countryName, userIn, userOut }) {
                         onChange={(e) => setProductWidth(e.target.value)}
                       />
                       <select id="width"
+<<<<<<< HEAD
                         name="width_unit"
+=======
+                        name="widthunit"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                         className="inputs1"
                         value={width}
                         onChange={e => {
                           setWidth(e.target.value)
                         }}>
+<<<<<<< HEAD
                         <option value="Cm">cm</option>
                         <option value="M">mtr</option>
+=======
+                        <option value="Cm">Cm</option>
+                        <option value="M">M</option>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                       </select>
                     </div>
                     <div className="sell__divs">
@@ -378,18 +486,30 @@ function Sell({ countryName, userIn, userOut }) {
                         onChange={(e) => setProductWeight(e.target.value)}
                       />
                       <select id="weight"
+<<<<<<< HEAD
                         name="weight_unit"
+=======
+                        name="weightunit"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                         className="inputs1"
                         value={weight}
                         onChange={e => {
                           setWeight(e.target.value)
                         }}>
                         <option value="G">gm</option>
+<<<<<<< HEAD
                         <option value="Kg">kg</option>
                       </select>
                     </div>
                     <textarea
                       className="signup__address aboutTheProduct"
+=======
+                        <option value="Kg">Kg</option>
+                      </select>
+                    </div>
+                    <textarea
+                      className="signup__address"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                       placeholder="About The Product"
                       value={productAbout}
                       required
@@ -398,7 +518,11 @@ function Sell({ countryName, userIn, userOut }) {
                     />
                     <label className="sell__productDescription label" >
                       Set Last date for Ordering.
+<<<<<<< HEAD
                       </label>
+=======
+                    </label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input
                       className="sell__deadline input"
                       name="deadline"
@@ -411,7 +535,11 @@ function Sell({ countryName, userIn, userOut }) {
                 <div className="sell__divs">
                   <label className="sell__wholesaleUnit label">
                     Wholesale Unit Bracket :-
+<<<<<<< HEAD
                       </label>
+=======
+                    </label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                   <select id="units"
                     name="units"
                     className="inputs0"
@@ -424,7 +552,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <option value="Units">Units</option>
                     <option value="Pcs">Pcs</option>
                     <option value="Kg">Kg</option>
+<<<<<<< HEAD
                     <option value="Ctns">Ctns</option>
+=======
+                    <option value="Ktns">Ctns</option>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <option value="Mtr">Mtr</option>
                   </select>
                 </div>
@@ -478,7 +610,11 @@ function Sell({ countryName, userIn, userOut }) {
                 <div className="sell__wholesale">
                   <label className="sell__wholesalePrice label">
                     Wholesale Price Bracket in {currency}:-
+<<<<<<< HEAD
                     </label>
+=======
+                  </label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                   <select id="currency"
                     name="currency"
                     className="inputs"
@@ -583,8 +719,12 @@ function Sell({ countryName, userIn, userOut }) {
                     className="sell__postalCode input"
                     type="text"
                     name="pin"
+<<<<<<< HEAD
                     // pattern="[0-9a-zA-Z]"
                     maxLength="10"
+=======
+                    pattern="[0-9a-zA-Z]{6}"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     placeholder="Postal Code"
                     value={pin}
                     required
@@ -592,6 +732,7 @@ function Sell({ countryName, userIn, userOut }) {
                   />
                 </div>
 
+<<<<<<< HEAD
                 <label className="label">Frieght Charges Setup:-</label>
                 <div className="sell__shippingPrice">
                   <div className="sell__continents__price">
@@ -640,6 +781,12 @@ function Sell({ countryName, userIn, userOut }) {
                 <div className="sell__shippingPrice">
                   <div className="sell__continents__price">
                     <label className="priceLabel">Asia</label>
+=======
+                <label className="label">Continent wise shipping prices:-</label>
+                <div className="sell__shippingPrice">
+                  <div className="sell__continents__price">
+                    <label className="priceLabel"><h4>Asia</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice11} name="SP1" onChange={e => {
                       setSPrice11(e.target.value)
                       calculate(e)
@@ -648,7 +795,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <input type="number" className="inputs disabledPriceTag" placeholder="$" value={sPrice1} name="AsiaSP1" readOnly />
                   </div>
                   <div className="sell__continents__price">
+<<<<<<< HEAD
                     <label className="priceLabel">Africa</label>
+=======
+                    <label className="priceLabel"><h4>Africa</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice22} name="SP2" onChange={e => {
                       setSPrice22(e.target.value)
                       calculate(e)
@@ -657,7 +808,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <input type="number" className="inputs disabledPriceTag" value={sPrice2} placeholder="$" name="AfricaSP2" readOnly />
                   </div>
                   <div className="sell__continents__price">
+<<<<<<< HEAD
                     <label className="priceLabel">Europe + UK</label>
+=======
+                    <label className="priceLabel"><h4>Europe</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice33} name="SP3" onChange={e => {
                       setSPrice33(e.target.value)
                       calculate(e)
@@ -666,7 +821,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <input type="number" className="inputs disabledPriceTag" value={sPrice3} placeholder="$" name="EuropeSP3" readOnly />
                   </div>
                   <div className="sell__continents__price">
+<<<<<<< HEAD
                     <label className="priceLabel">South America</label>
+=======
+                    <label className="priceLabel"><h4>South America</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice44} name="SP4" onChange={e => {
                       setSPrice44(e.target.value)
                       calculate(e)
@@ -675,7 +834,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <input name="currencyA" type="number" className="inputs disabledPriceTag" value={sPrice4} placeholder="$" name="SouthAmericaSP4" readOnly />
                   </div>
                   <div className="sell__continents__price">
+<<<<<<< HEAD
                     <label className="priceLabel">North America</label>
+=======
+                    <label className="priceLabel"><h4>North America</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice55} name="SP5" onChange={e => {
                       setSPrice55(e.target.value)
                       calculate(e)
@@ -684,7 +847,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <input name="currencyNAm" type="number" className="inputs disabledPriceTag" value={sPrice5} placeholder="$" name="NorthAmericaSP5" readOnly />
                   </div>
                   <div className="sell__continents__price">
+<<<<<<< HEAD
                     <label className="priceLabel">Antarctica</label>
+=======
+                    <label className="priceLabel"><h4>Antarctica</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice66} name="SP6" onChange={e => {
                       setSPrice66(e.target.value)
                       calculate(e)
@@ -693,7 +860,11 @@ function Sell({ countryName, userIn, userOut }) {
                     <input name="currencyAnt" type="number" className="inputs disabledPriceTag" value={sPrice6} placeholder="$" name="AntarcticaSP6" readOnly />
                   </div>
                   <div className="sell__continents__price">
+<<<<<<< HEAD
                     <label className="priceLabel">Australia</label>
+=======
+                    <label className="priceLabel"><h4>Australia</h4></label>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <input type="number" className="inputs pricetag" required value={sPrice77} name="SP7" onChange={e => {
                       setSPrice77(e.target.value)
                       calculate(e)
@@ -705,6 +876,7 @@ function Sell({ countryName, userIn, userOut }) {
                 <button
                   className="sell__submitButton"
                   type="submit"
+<<<<<<< HEAD
                   onClick={() => {
                     const valid = document.getElementById("form1").checkValidity()
                     if (valid) {
@@ -716,10 +888,16 @@ function Sell({ countryName, userIn, userOut }) {
                 >
                   SUBMIT
             </button>
+=======
+                >
+                  SUBMIT
+          </button>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
               </form>
             </div>
           </div>
         )
+<<<<<<< HEAD
       } else {
         return <Redirect to="/buyer/sellPage" />
       }
@@ -749,6 +927,35 @@ function Sell({ countryName, userIn, userOut }) {
           </Modal>
         </div>
       )
+=======
+      }
+      else {
+        return (
+          <div>
+            <Modal
+              className="orderModal cartPage__modal verify__modal"
+              isOpen={true}
+              shouldCloseOnOverlayClick={false}
+              shouldCloseOnEsc={true}
+              onRequestClose={false}
+            >
+              <h2 className="orderModal__heading cartPage__modalHeader orderModal__heading1"  >Your E-Mail is not verified</h2>
+              <p className="orderModal__heading orderModal__heading1 " >Please press the button below to start the verification process, a message will be sent to your email account, please verify to use this website. </p>
+              <div className="cartPage__modalButtons">
+                <div>
+                  <button className="cartPage__modalButton modalButton1 modalButton1s" onClick={verify} >Verify E-Mail</button>
+
+                </div>
+                <div>
+                  <Link to="/buyer/" className="cartPage__modalButton modalButton2 modalButton1s" onClick={() => window.location.reload()}>Close</Link>
+
+                </div>
+              </div>
+            </Modal>
+          </div>
+        )
+      }
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
   }
 }

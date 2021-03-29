@@ -1,7 +1,10 @@
 AQkCHtXEOSF-8v5Tzf1wnbUvUJxz6omYX44EUrG1XUiv7AH63SYrT-XO_ReFmoe1wC4SBXqSPrPL5ZAK
 
+<<<<<<< HEAD
 new client id = Aen-GiKzzzrf0IvS4q9Bz2ncb9vRiUhvXcd7oUwC6VC2jXcRw3RYMLN9yL5aScXp3up4ft5m_2xWqhzr
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 let url = 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Your+Subject+here&body='+msgbody+'&ui=2&tf=1&pli=1';
 
 window.open(url, 'sharer', 'toolbar=0,status=0,width=648,height=395');

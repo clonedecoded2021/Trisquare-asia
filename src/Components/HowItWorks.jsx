@@ -34,7 +34,11 @@ function HowItWorks() {
         </div>
       </div>
       <div>
+<<<<<<< HEAD
         <a href = "https://trisquare.asia//buyer/info/buy.html" ><button className="howItWorks__button">FIND OUT MORE</button></a>
+=======
+        <a href = "https://trisquare.asia/en/content/4-about-us" ><button className="howItWorks__button">Find Out More</button></a>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       </div>
     </section>
   );

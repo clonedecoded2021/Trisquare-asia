@@ -16,6 +16,7 @@ import AdminPurchases from './Components/AdminPurchases';
 import AdminRequests from './Components/AdminRequests';
 import AdminVerifyUser from './Components/AdminVerifyUser';
 import SellPage from './Components/SellPage';
+<<<<<<< HEAD
 // import EmailVerification from './Components/EmailVerification'
 import EmailVerification from './Components/EmailVerification'
 import { useEffect, useState } from "react";
@@ -24,6 +25,12 @@ import ResetPassword from "./Components/ResetPassword";
 import { propTypes } from "react-bootstrap/esm/Image";
 import AdminSellers from "./Components/AdminSellers";
 import AdminBuyers from "./Components/AdminBuyers";
+=======
+import EmailVerifi from './Components/EmailVerification'
+import { useEffect, useState } from "react";
+import Axios from 'axios'
+import ResetPassword from "./Components/ResetPassword";
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -33,6 +40,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+<<<<<<< HEAD
         <Switch>
           <Route exact path="/buyer" >
             <Header />
@@ -78,10 +86,30 @@ function App() {
               </>
             )
           }} />
+=======
+        <Header />
+        <Switch>
+          <Route exact path="/buyer" component={Home} />
+          <Route exact path="/buyer/login" component={Login} />
+          <Route exact path="/buyer/signup" >
+            <Signup />
+          </Route>
+          <Route exact path="/buyer/sell" >
+            <Sell />
+          </Route>
+          <Route exact path="/buyer/sellPage" >
+            <SellPage />
+          </Route>
+          <Route exact path="/buyer/cartPage" >
+            <CartPage />
+          </Route>
+          <Route exact path="/buyer/product/:id" component={ProductPage} />
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
           <Route exact path="/buyer/modal" >
             <OrderModal />
           </Route>
           <Route exact path="/buyer/admin" >
+<<<<<<< HEAD
             <Header />
             <Admin products={products} />
             <Footer1 />
@@ -124,6 +152,32 @@ function App() {
           <Route exact path="/buyer/activate/:email/:id" component={EmailVerification} />
           <Route exact path="/buyer/forgot_Password/:email" component={ResetPassword} />
         </Switch>
+=======
+            <Admin products={products} />
+          </Route>
+          <Route exact path="/buyer/admin/preorders" >
+            <AdminPreOrder products={products} />
+          </Route>
+          <Route exact path="/buyer/admin/purchases" >
+            <AdminPurchases products={products} />
+          </Route>
+          <Route exact path="/buyer/admin/requests" >
+            <AdminRequests products={products} />
+          </Route>
+          <Route exact path="/buyer/admin/verifyUser" >
+            <AdminVerifyUser products={products} />
+          </Route>
+          <Route exact path="/buyer/forgotPassword" >
+            <ForgotPage />
+          </Route>
+          {/* <Route exact path="/buyer/activate/:email/:id" component={EmailVerifi} /> */}
+          <Route exact path="/api/forgot_Password/:email">
+            <ResetPassword />
+          </Route>
+        </Switch>
+        {/* <Footer /> */}
+        <Footer1 />
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       </div>
     </BrowserRouter>
   );

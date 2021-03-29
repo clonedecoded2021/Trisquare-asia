@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 .slider {
@@ -6,17 +7,29 @@
     width: 100vw;
     height: auto;
     object-fit: contain;
+=======
+.slider {
+    position: relative;
+    height: 60vh;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -122px !important;
     overflow: hidden;
+<<<<<<< HEAD
     font-family: 'Poppins', Arial, Helvetica !important;
   }
   .image {
     width: 100vw;
     height: auto;
     object-fit: cover;
+=======
+  }
+  .image {
+    overflow: hidden;
+    width: auto;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   }
   .right-arrow {
     position: absolute;
@@ -48,13 +61,17 @@
   }
   .home__main__header{
     z-index: -1;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif !important;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   }
   .slider__buttonContainer{
     width: 100vw;
     height: auto;
     margin: auto;
   }
+<<<<<<< HEAD
   @media only screen and (max-width: 1024px){
     .slider {
       position: relative;
@@ -119,4 +136,11 @@
     height: auto;
     object-fit: cover;
   }
+=======
+ @media only screen and (max-width: 768px){
+  .slider {
+    height: 40vh !important;
+    margin-top: -20px !important;
+  }
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }

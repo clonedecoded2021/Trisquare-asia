@@ -15,12 +15,20 @@ const ProductDetails = ({ Pid, Email, Mob, fName, lName, BName, userType, City, 
             id: Pid,
             approved: 1,
         }
+<<<<<<< HEAD
         axios.put("https://trisquare.asia/api/user_data/update", DATA).then((res) => alert("user is now approved."))
             .then(() => window.location.reload())
     }
     const decline = () => {
         axios.delete(`https://trisquare.asia/api/user_data/delete/${Pid}`).then((res) => alert("user deleted."))
             .then(() => window.location.reload())
+=======
+        axios.put("https://trisquare.asia/api/user_data/update", DATA).then((res) => console.log(res))
+    }
+    const decline = () => {
+        axios.delete(`https://trisquare.asia/api/user_data/delete/${Pid}`).then((res) => console.log(res))
+
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     return (
         <div className="admin__container">
@@ -29,7 +37,11 @@ const ProductDetails = ({ Pid, Email, Mob, fName, lName, BName, userType, City, 
                     <p>{`${fName} ${lName} recently registered as a ${userType} in your site.`}</p>
                 </div>
                 <div className="admin__buttons">
+<<<<<<< HEAD
                     <button className="admin__accept preorder__button" onClick={approval}>Accept</button>
+=======
+                    <button className="admin__accept" onClick={approval}>Accept</button>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <button className="admin__ignore preorder__button" onClick={decline}>Block</button>
                 </div>
                 <Modal
@@ -92,7 +104,11 @@ const AdminVerifyUser = () => {
     }, [])
 
 
+<<<<<<< HEAD
     // console.log(data)
+=======
+    console.log(data)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     if (admin) {
         return (
             <div className="admin">
@@ -113,8 +129,11 @@ const AdminVerifyUser = () => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption active"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__navbar" style={{ display: `${disp}`, transition: "0.3s" }}>
@@ -123,8 +142,11 @@ const AdminVerifyUser = () => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption active"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__mainPage">

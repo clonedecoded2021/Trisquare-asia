@@ -10,12 +10,16 @@ import axios from 'axios';
 const ProductDetails = ({ Pid, productUrl, businessName, productDesc, productName, email, mob, product }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [reason, setReason] = useState("")
+<<<<<<< HEAD
     const [deposit, setDeposit] = useState()
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
     const approval = () => {
         const data = {
             id: Pid,
             approval: 1,
+<<<<<<< HEAD
             deposit: deposit
         }
         axios.put("https://trisquare.asia/api/product_data/approval/update", data).then(() => {
@@ -25,6 +29,17 @@ const ProductDetails = ({ Pid, productUrl, businessName, productDesc, productNam
     }
     const decline = () => {
         axios.delete(`https://trisquare.asia/api/product_data/delete/${Pid}`).then((res) => alert("product deleted"))
+=======
+        }
+        axios.put("https://trisquare.asia/api/product_data/approval/update", data).then(() => {
+            console.log("updated")
+        })
+        window.location.reload()
+
+    }
+    const decline = () => {
+        axios.delete(`https://trisquare.asia/api/product_data/delete/${Pid}`).then((res) => console.log("deleted"))
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         window.location.reload()
     };
 
@@ -51,9 +66,12 @@ const ProductDetails = ({ Pid, productUrl, businessName, productDesc, productNam
                         <div className="admin__divRow2">
                             <input type="Text" className="admin__input" value={reason} placeholder="Reason for removal" onChange={productRemoval} />
                             <button className="admin__emailButton"><a href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${email}&su=Trisquare+product+removed&body=Hi+${businessName},The+product+named+${productName}+you+have+submitted+to+publish+has+been+removed+for+${reason}.&ui=2&tf=1&pli=1`} target="_blank" className="admin__emailLink">Send Email</a></button>
+<<<<<<< HEAD
                             <input type="number" className="admin__input admin__inputs1" value={deposit} placeholder="Pre-Orders Deposit Charge" onChange={(e) => {
                                 setDeposit(e.target.value)
                             }} />
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                         </div>
                         <Modal
                             className="orderModal"
@@ -142,8 +160,11 @@ const Admin = ({ products }) => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__navbar" style={{ display: `${disp}` }}>
@@ -152,8 +173,11 @@ const Admin = ({ products }) => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__mainPage">

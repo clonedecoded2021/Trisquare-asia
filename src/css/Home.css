@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap");
 
 .home {
@@ -47,11 +48,56 @@
   font-family: "Poppins", sans-serif;
 }
 #timers {
+=======
+.home{
+  display: flex;
+  margin-top: -122px !important;
+}
+.home__main__header{
+    position: absolute;
+    top: 55vh;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 2rem #000;
+    padding: 150px 100px;
+    padding-bottom: 0px !important;
+    z-index: 9;
+    margin-top: -225px;
+}
+.home__main__link{
+    display: flex;
+    width: 180px;
+    height: auto;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 70%;
+    left: 40%;
+    padding: 10px 25px;
+    border: 3px solid black;
+    color: white;
+    background: transparent;
+    text-shadow: 0 0 3rem #000;
+    box-shadow: 0 0 2rem #000;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    z-index: 9;
+    transition: 0.5s;
+}
+#timers{
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
+<<<<<<< HEAD
 .home__main__link:hover {
   color: green;
   background-color: white;
@@ -247,6 +293,170 @@
     margin-top: 0px;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
+=======
+.home__main__link:hover{
+    color: green;
+    background-color: white;
+    text-shadow: 0 0 3rem green;
+    border: 3px solid green;
+    box-shadow: 0 0 2rem green;
+}
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    overflow: hidden;
+  }
+  .image {
+    width: 100vw;
+    height: 88vh;
+    border-radius: 10px;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 2rem #000 !important;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 2rem #000 !important;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+  }
+  .slide.active {
+    opacity: 1;
+    transition-duration: 2s;
+    transform: scale(1.08);
+  }
+  .bulletImage{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .socialMission__contents{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .buying__logo{
+    display: flex !important;
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: contain !important;
+  }
+  @media only screen and (max-width: 1024px) {
+    .home__main__header{
+      width: 80%;
+      top: 45%;
+      left: 12%;
+      font-size: 2.2rem !important;
+      padding: 0px 0px;
+      margin-top: 0px;
+  }
+  .home__main__link{
+    width: 180px !important;
+    top: 70%;
+    left: 39%;
+    padding: 10px 20px;
+    font-size: 2.1rem;    
+  }
+  .bulletImage{
+    width: 25px;
+    height: 25px;
+  }
+  .socialMission__contents{
+    width: 180px;
+    height: 100px;
+  }
+  .buying__logo{
+    width: 200px !important;
+    height: 200px !important;
+  }
+  }
+  @media only screen and (max-width: 786px){
+    .home__main__header{
+      width: 80%;
+      top: 45%;
+      left: 12%;
+      font-size: 1.9rem !important;
+      padding: 0px 0px;
+      margin-top: 0px;
+    }
+    .home__main__link{
+      width: 150px !important;
+      top: 70%;
+      left: 38%;
+      padding: 10px 20px;
+      font-size: 1.8rem;    
+    }
+    .image {
+      width: 250vw;
+    }
+    .bulletImage{
+      width: 20px;
+      height: 20px;
+    }
+    .socialMission__contents{
+      width: 180px;
+      height: 100px;
+    }
+    .buying__logo{
+      width: 180px !important;
+      height: 180px !important;
+    }
+  }
+  @media only screen and (max-width:600px){
+    .home__main__header{
+      width: 75%;
+      top: 50%;
+      left: 12%;
+      font-size: 1rem !important;
+      padding: 0px 0px;
+      margin-top: 0px;
+  }
+  .home__main__link{
+    width: 120px !important;
+    top: 70%;
+    left: 27%;
+    padding: 7px 20px;
+    border: 3px solid white;
+    background: rgba(250,250,250,0.2);
+    text-shadow: 0 0 1rem green ;
+    font-size: 1.3rem;    
+  }
+  .image {
+    width: 250vw;
+    height: 70vh;
+    overflow: hidden !important;
+    z-index: -10;
+  }
+  .slider {
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    overflow: hidden;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   }
   .right-arrow {
     top: 55%;
@@ -267,6 +477,7 @@
     cursor: pointer;
     user-select: none;
   }
+<<<<<<< HEAD
   .bulletImage {
     width: 44px;
     height: 44px;
@@ -385,3 +596,18 @@
     font-family: "Poppins", sans-serif;
   } */
 }
+=======
+  .bulletImage{
+    width: 17px;
+    height: 17px;
+  }
+  .socialMission__contents{
+    width: 180px;
+    height: 50px;
+  }
+  .buying__logo{
+    width: 120px !important;
+    height: 90px !important;
+  }
+}
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d

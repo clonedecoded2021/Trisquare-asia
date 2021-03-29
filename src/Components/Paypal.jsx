@@ -30,8 +30,12 @@ const Paypal = ({ money, pId, product, address, country, PIN, contact, ShippingP
                 }
             },
             onError: (err) => {
+<<<<<<< HEAD
                 alert("Fill the form correctly.")
                 window.location.reload()
+=======
+                console.log(err)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
             }
         }).render(paypal.current)
     }, [])
@@ -48,22 +52,37 @@ const Paypal = ({ money, pId, product, address, country, PIN, contact, ShippingP
             ProductId: pId,
         }
         axios.post("https://trisquare.asia/api/preorders_data", DATA)
+<<<<<<< HEAD
             .then(() => alert(`You will be notified when you're target price and preferred quantity has been reached.`))
             .catch(err => alert("Something is wrong."))
+=======
+            .then(() => alert("To confirm you are a serious buyer of this product, you will now be invited to pay a fully refundable deposit of $25USD. You will be notified when you're target price and preferred quantity has been reached."))
+            .catch(err => console.log(err))
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
 
     const getData = () => {
         const DATA = {
             id: pId,
+<<<<<<< HEAD
             soldProducts: parseInt(product.soldProducts) + parseInt(Quantity),
         }
         axios.put("https://trisquare.asia/api/product_data/update", DATA).then((res => console.log("")))
+=======
+            soldProducts: product.soldProducts + Quantity,
+        }
+        axios.put("https://trisquare.asia/api/product_data/update", DATA).then((res => console.log(res)))
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     const sendNotification = () => {
         const loginstatus = localStorage.getItem("_trisquarestorage")
         if (loginstatus) {
             const newValue = JSON.parse(loginstatus)
+<<<<<<< HEAD
             // console.log(newValue.data[0].username)
+=======
+            console.log(productName)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
             const OrderData = {
                 ProductName: productName,
                 ProductQuantity: Quantity,
@@ -78,7 +97,11 @@ const Paypal = ({ money, pId, product, address, country, PIN, contact, ShippingP
                 Name: newValue.data[0].username,
             }
             axios.post("https://trisquare.asia/api/orderhistory", OrderData).then(res =>
+<<<<<<< HEAD
                 alert("Order is Placed."))
+=======
+                console.log(res))
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         } else {
             alert("Please, Login First!!!")
         }

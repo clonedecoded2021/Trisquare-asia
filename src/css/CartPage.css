@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 .cartPage{
     margin-top: 160px;
     font-family: 'Poppins', sans-serif;
+=======
+.cartPage{
+    margin-top: 160px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .cartPage__searchBar{
     display: flex;
@@ -103,7 +108,11 @@
 .cartPage__modalButton{
     display: flex;
     width: 220px;
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 1.5rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     padding: 10px;
     align-items: center; 
     color: Black;
@@ -133,8 +142,11 @@
     text-decoration: none;
     border: 1px solid gray !important;
     align-items: center !important;
+<<<<<<< HEAD
     width: 110px;
     padding: 7px !important;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .modalButton2:hover{
     text-decoration: underline;
@@ -165,6 +177,7 @@
     width: 120px;
     font-size: 1rem;
 }
+<<<<<<< HEAD
 .verify__modal{
     height: 40% !important;
 }
@@ -251,6 +264,11 @@
         align-items: center !important;
         justify-content: center;
         margin: 2rem;
+=======
+@media only screen and (max-width: 1300px) {
+    .verify__modal{
+        height: 30% !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
 }
 
@@ -291,16 +309,23 @@
         height: auto;
         margin: auto;
         margin-bottom: 35px;
+<<<<<<< HEAD
         /* padding-left: 12%;
         padding-right: 12%; */
         justify-content: center;
         align-items: center;
     }
     
+=======
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     .cartPage__modal{
         padding: 1rem;
         text-align: center !important;
     }
+<<<<<<< HEAD
     .cartPage__modalHeader{
         padding-bottom: 0px !important;
     }
@@ -316,6 +341,11 @@
         text-align: center !important;
         font-size: 0.8rem !important;
         padding-bottom: 0px;
+=======
+    .orderModal__heading1{
+        text-align: center !important;
+        font-size: 1.2rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .cartPage__modalButtons{
         display: flex !important;
@@ -329,8 +359,13 @@
     }
     .cartPage__modalButton{
         display: flex !important;
+<<<<<<< HEAD
         width: 90px !important;
         font-size: 0.7rem !important;
+=======
+        width: 120px !important;
+        font-size: 0.9rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         padding: 10px !important;
         align-items: center !important; 
         color: Black !important;
@@ -360,11 +395,15 @@
         text-decoration: none;
         border: 1px solid gray !important;
         align-items: center !important;
+<<<<<<< HEAD
         padding: 8px !important;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .modalButton2:hover{
         text-decoration: underline;
     }
+<<<<<<< HEAD
     .verify__modal{
         height: 35% !important;
         width: 80% !important;
@@ -396,6 +435,8 @@
         height: 35% !important;
         width: 80% !important;
     }
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 @media only screen and (max-width: 280px){
     .cartPage__main{

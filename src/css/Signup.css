@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .signup__form{
     display: flex;
     width: 100vw;
@@ -14,7 +17,10 @@
     margin: auto;
     border-radius: 1rem;
     margin-top: 160px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__container{
     display: flex;
@@ -24,7 +30,10 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__formHeading{
     font-family: 'Times New Roman', Times, serif;
@@ -32,7 +41,10 @@
     text-decoration: underline;
     text-align: center;
     margin-bottom: 2rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__dp{
     display: flex;
@@ -53,7 +65,10 @@
     left: 40%;
     opacity: 1;
     cursor: default;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__uploadLink{
     border: 1px solid lightgray;
@@ -61,7 +76,10 @@
     background: rgb(0, 117, 163);
     color: white;
     margin-bottom: 2rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 input[type = number]::-webkit-inner-spin-button,
 input[type = number]::-webkit-outer-spin-button{
@@ -81,12 +99,18 @@ input[type = number]::-webkit-outer-spin-button{
     font-weight: 500;
     letter-spacing: 1px;
     font-size: larger;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .input::placeholder{
     color: rgb(138, 137, 137);
     font-weight: 400;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .smallInput{
     width: 100%;
@@ -103,7 +127,10 @@ input[type = number]::-webkit-outer-spin-button{
     font-weight: 500;
     letter-spacing: 1px;
     font-size: larger;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .inputDiv{
     display: flex;
@@ -112,7 +139,10 @@ input[type = number]::-webkit-outer-spin-button{
     float: left;
     width: 100%;
     margin-left: -18px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__address{
     width: 100%;
@@ -129,12 +159,18 @@ input[type = number]::-webkit-outer-spin-button{
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
     overflow-y: scroll;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__address::placeholder{
     color: rgb(138, 137, 137);
     font-weight: 400;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__submitButton{
     width: 100%;
@@ -148,7 +184,10 @@ input[type = number]::-webkit-outer-spin-button{
     border-radius: 5px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__submitButton:hover{
     background:  #5a8b29;
@@ -169,7 +208,10 @@ input[type = number]::-webkit-outer-spin-button{
     transition: 0.2s;
     color: #476e20;
     padding-left: 5px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .signup__resetPassword:hover{
     color: #69a32f;
@@ -179,37 +221,55 @@ input[type = number]::-webkit-outer-spin-button{
     font-weight: 400 !important;
     font-size: 1rem;
     margin-bottom: 15px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .link{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+=======
+}
+.link{
+    font-weight: bold;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .file_button_container,
 .file_button_container input {
      height: 35px;
      width: 247px;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .file_button_container {
      background: transparent url(http://i.stack.imgur.com/BT5AB.png) center no-repeat;
      display: flex;
      justify-content: center;
      align-items: center;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .file_button_container input {
      opacity: 0;
      font-size: 0.8rem;
      line-height: 2rem;
      cursor: pointer;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .signup__country{
      display: flex !important;
      font-size: 2rem !important;
      margin-left: 2rem !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .userType{
      display: flex;
@@ -218,9 +278,14 @@ input[type = number]::-webkit-outer-spin-button{
      border: 1px solid gray;
      justify-content: space-around;
      border-radius: 10px;
+<<<<<<< HEAD
      background: transparent;
      margin-bottom: 2rem;
      font-family: 'Poppins', sans-serif;
+=======
+     background: rgb(218, 216, 216);
+     margin-bottom: 2rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .userType__label{
      display: flex;
@@ -236,7 +301,10 @@ input[type = number]::-webkit-outer-spin-button{
      /* text-decoration: underline; */
      margin-top: 1.7rem;
      font-weight: 800;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .userType__select{
     display: flex;
@@ -257,11 +325,18 @@ input[type = number]::-webkit-outer-spin-button{
     text-align: center;
      align-items: center;
      justify-content: center;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
  }
  @media only screen and (max-width: 768px){
     .signup__formHeading{
         font-size: 1.5rem;
+=======
+ }
+ @media only screen and (max-width: 768px){
+    .signup__formHeading{
+        font-size: 1.6rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         text-align: center;
         margin-bottom: 2rem;
     }
@@ -269,7 +344,11 @@ input[type = number]::-webkit-outer-spin-button{
         display: flex !important;
         margin-left: 1rem !important;
         padding-top: 2rem !important;
+<<<<<<< HEAD
         font-size: 0.8rem !important;
+=======
+        font-size: 1rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
  }
  @media only screen and (max-width: 600px){
@@ -293,22 +372,37 @@ input[type = number]::-webkit-outer-spin-button{
         border-bottom: 1px solid gray !important;
     } 
     .input {
+<<<<<<< HEAD
         font-size: 0.8rem !important;
+=======
+        font-size: 0.95rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         margin: 10px 15px !important;
         border-bottom: 1px solid gray !important;
         text-transform: none !important;
     }
     .smallInput{
         width: 80% !important;
+<<<<<<< HEAD
         font-size: 0.8rem !important;
+=======
+        font-size: 0.95rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         border-bottom: 1px solid gray !important;
         font-size: 0.95;
     }
     .signup__address{
+<<<<<<< HEAD
         font-size: 0.8rem !important;
         margin: 0px 0;
         border-bottom: 1px solid gray !important;
         font-size: 0.8rem;
+=======
+        font-size: 0.95rem !important;
+        margin: 0px 0;
+        border-bottom: 1px solid gray !important;
+        font-size: 0.95;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     } 
     .signup__submitButton{
         font-size: 1.1rem !important;
@@ -323,16 +417,26 @@ input[type = number]::-webkit-outer-spin-button{
     .signup__country{
         display: flex !important;
         margin-left: 1rem !important;
+<<<<<<< HEAD
         font-size: 0.8rem !important;
     }
     .userType > .userType__label >p{
         font-size: 0.7rem;
         font-family: 'Poppins', sans-serif;
+=======
+        font-size: 1rem !important;
+    }
+    .userType > .userType__label >p{
+        font-size: 0.7rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     } 
     .userType > .userType__select{
         /* width: 100% !important; */
         font-size: 0.7rem;
+<<<<<<< HEAD
         font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     } 
     .userType{
         width: 100%;

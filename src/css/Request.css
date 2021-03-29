@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .request{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
     background: linear-gradient(cyan, white);
+=======
+    background: linear-gradient(white, lightgreen);
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     height: 350px;
     border-top: 2px solid lightgray;
     padding-bottom: 25px;
     padding-top: 25px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .request__button{
     border: 3px solid black;

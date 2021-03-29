@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .admin{
     display: flex;
     height: 75vh;
@@ -8,7 +11,10 @@
     box-shadow: 2px 2px 5px gray;
     margin-top: 160px;
     flex-direction: row;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 /* .admin__container{
 
@@ -16,7 +22,10 @@
 .admin__mainPanel{
     display: flex !important;
     flex-direction: column !important;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__products{
     display:flex;
@@ -32,7 +41,10 @@
     /* overflow-x: hidden;
     overflow-y: scroll!important; */
     overflow: hidden;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__products1{
     display:flex;
@@ -48,7 +60,10 @@
     /* overflow-x: hidden;
     overflow-y: scroll!important; */
     overflow: hidden;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__products>img{
     width: 50px;
@@ -70,7 +85,10 @@
     /* overflow-x: hidden;
     overflow-y: scroll!important; */
     overflow: hidden;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__divRow2{
     display: flex;
@@ -80,14 +98,23 @@
     background-color: transparent;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     /* z-index: 1; */
 }
 .admin__input{
     display: flex;
+<<<<<<< HEAD
     width: 50%;
     padding: 5px 10px;
     font-size: 0.8rem;
+=======
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 1rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     color: gray;
     background: transparent;
     outline-style: none !important;
@@ -95,6 +122,7 @@
     border: 1.5px solid gray !important;
     letter-spacing: 1.5px;
     border-radius: 5px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .admin__input::placeholder{
@@ -103,11 +131,14 @@
 
 .admin__inputs1{
     width: 25%;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__emailButton{
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     width: 12%;
     outline-style: none;
     outline: none;
@@ -124,10 +155,20 @@
 }
 .admin__emailLink{
     font-size: 0.85rem;
+=======
+    width: 20%;
+    outline-style: none;
+    outline: none;
+    border: none;
+}
+.admin__emailLink{
+    font-size: large;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     text-decoration: none;
     font-weight: bold;
     color: white;
     background: #555;
+<<<<<<< HEAD
     padding: 5px 10px;
     border-radius: 10px;
     transition: all 0.3s;
@@ -136,6 +177,14 @@
 }
 .admin__emailButton:hover{
     background: #7fa833;
+=======
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.admin__emailLink:hover{
+    background: #02b8af;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     box-shadow: 0 0 20px #555;
 }
 .admin__divRow1>img{
@@ -147,6 +196,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+<<<<<<< HEAD
     justify-content: flex-start;
     text-align: center;
     height: 70px;
@@ -163,6 +213,19 @@
     padding: 8px !important;
     margin: 10px 20px !important;
     font-size: 0.8rem !important;
+=======
+    justify-content: space-around;
+    text-align: center;
+}
+.admin__productName{
+    font-size: 1.5rem;
+}
+.admin__accept,
+.admin__ignore{
+    padding: 10px !important;
+    margin: 10px 20px !important;
+    font-size: 1rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     font-weight: 600 !important;
     color: white;
     border: none;
@@ -170,8 +233,11 @@
     border-radius: 4px;
     transition: 0.2s;
     cursor: pointer;
+<<<<<<< HEAD
     width: 70px;
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__accept{
     background: green !important;
@@ -198,6 +264,7 @@
     border: 1px solid gray;
     border-radius: 5px;
 }
+<<<<<<< HEAD
 .orderModal__paradiv{
     height: auto;
     max-height: 100px !important;
@@ -211,12 +278,20 @@
     max-height: 400px;
     min-height: 80px;
     overflow-y: auto;
+=======
+.orderModal__productDescription{
+    padding: 15px;
+    padding-bottom: 25px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .para{
     color: rgb(70, 70, 70);
     font-weight: 400;
+<<<<<<< HEAD
     /* height: auto !important;
     max-height: 300px; */
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .orderModal__sellerDescription{
     display: flex;
@@ -224,7 +299,10 @@
     flex-direction: row;
     height: auto;
     justify-content: space-around;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__navbar{
     display: flex;
@@ -238,7 +316,10 @@
     border-radius: 14px;
     padding-top: 25px;
     transition: all 2s !important;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__navbarOption{
     display: block !important;
@@ -251,7 +332,10 @@
     transition: all 0.3s;
     justify-content: center;
     border-bottom: 1.5px solid rgb(3, 68, 14);
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 
 .admin__navbarOption > h4{
@@ -259,7 +343,10 @@
     text-align: center;
     font-size: 1.5rem;
     width:100%;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__navbarOption > h4:hover{
     color: black;
@@ -275,14 +362,20 @@
     box-shadow: 0 0 15px #888;
     flex-direction: column;
     overflow-x: hidden;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__heading{
     width: 100%;
     text-align: center;
     text-decoration: underline;
     font-size: 2.3rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__image{
     display: flex;
@@ -293,7 +386,10 @@
 }
 .active > h4{
     color: black !important;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .adminModal{
     display: flex;
@@ -303,11 +399,17 @@
     width: 100%;
     background: rgb(177, 176, 176);
     margin-top: -25px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .adminModal__header{
     margin-top: 22rem;
     font-family: 'Poppins', sans-serif;
+=======
+}
+.adminModal__header{
+    margin-top: 13rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .hamburgerIcon{
     display: none;
@@ -321,7 +423,10 @@
     color: rgb(92, 92, 92);
     font-size: 2rem;
     transition: 3s ease-in-out !important;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 @media only screen and (max-width: 1024px){
     .admin__products,
@@ -397,6 +502,7 @@
         height: 50px !important;
         overflow-y: scroll;
     }
+<<<<<<< HEAD
     .adminModal__header{
         margin-top: 30rem !important;
     }
@@ -406,6 +512,8 @@
         transition: 3s ease-in-out !important;
         font-family: 'Poppins', sans-serif;
     }
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 
 @media only screen and (max-width: 600px){
@@ -436,7 +544,10 @@
     .admin__accept,
     .admin__ignore{
         margin: 10px 5px !important;
+<<<<<<< HEAD
         width: 50px;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .orderModal__productImage{
         width: 230px;
@@ -495,9 +606,14 @@
     }
     .hamIcon{
         color: rgb(92, 92, 92);
+<<<<<<< HEAD
         font-size: 2rem !important;
         transition: 3s ease-in-out !important;
         font-weight: 400 !important;
+=======
+        font-size: 2rem;
+        transition: 3s ease-in-out !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .crossIcon{
         color: rgb(255, 0, 0);
@@ -600,6 +716,7 @@
     font-size: 0.6rem;
     width: 30%;
     }
+<<<<<<< HEAD
     .admin__input{
         display: flex;
         width: 40%;
@@ -643,4 +760,6 @@
     .adminModal__header{
         margin-top: 7rem !important;
     }
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }

@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .admin__products1{
     display:flex;
     align-items: center;
@@ -14,7 +17,10 @@
     /* overflow-x: hidden;
     overflow-y: scroll!important; */
     overflow: hidden;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .admin__products1>img{
     width: 50px;

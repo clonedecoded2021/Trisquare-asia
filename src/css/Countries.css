@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 .inputs {
@@ -7,28 +8,51 @@
     padding-top: 4px !important;
     padding-bottom: 4px !important;
     font-size: 1.2rem !important;
+=======
+.inputs {
+    width: 95%;
+    padding: 10px;
+    margin-left: 35px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    font-size: 1.38rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     margin-top: 8px !important;
     outline: none;
     outline-style: none;
     border: none;
     border-bottom: 2px solid gray;
     color: rgb(95, 95, 95) !important;
+<<<<<<< HEAD
     letter-spacing: 1px;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+=======
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .inputs::placeholder{
     color: rgb(138, 137, 137);
     font-weight: 400;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 @media only screen and (max-width: 600px){
     .inputs {
         width: 100%;
         margin-left: 0px !important;
         padding-top: 5px !important;
+<<<<<<< HEAD
         padding-bottom: 6px !important;
         font-size: 0.8rem !important;
+=======
+        padding-bottom: 5px !important;
+        font-size: 1rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         border-bottom: 1px solid gray;
         color: gray !important;
     }

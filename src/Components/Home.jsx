@@ -8,7 +8,10 @@ import { Link } from 'react-router-dom';
 import Buying from '../Images/buying.png';
 import Bullets from '../Images/bullets.png';
 import SaveBuy from '../Images/savebuy.jpg';
+<<<<<<< HEAD
 import Links from "./Links";
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
 const Home = () => {
 
@@ -33,13 +36,18 @@ const Home = () => {
           <h1>All our wholesale group-buys feature top selling branded products. These high performing items are carefully selected to follow Amazon reseller requirements.</h1>
         </div>
         <div>
+<<<<<<< HEAD
           <Link to="/buyer/cartPage"><button className="howItWorks__button">GROUP BUY</button></Link>
+=======
+          <Link to="/buyer/cartPage"><button className="howItWorks__button">Group Buy</button></Link>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         </div>
       </section>
       <section className="whyTrisquare">
         <div className="howItWorks__whyHeading">
           <h1 className="howItWorks__whyMainHeading">WHY BUY WITH TRISQUARE?</h1>
         </div>
+<<<<<<< HEAD
         <img className="bulletImage" src={Bullets} />
         <h4>WE HAVE A LARGE NETWORK OF RESELLERS ALREADY ADVANCING FROM OUR GROUP-BUYS.</h4>
         <h5>This empowers new members of the group-buy to reach higher profit margins.</h5>
@@ -57,6 +65,25 @@ const Home = () => {
         <h5>Whether you are looking for wholesale games, merchandise, or toys. they will all be genuine.</h5>
         <div>
           <Link to="/buyer/cartPage"><button className="howItWorks__button">GROUP BUY</button></Link>
+=======
+        <img className = "bulletImage" src = {Bullets} />
+        <h4>WE HAVE A LARGE NETWORK OF RESELLERS ALREADY ADVANCING FROM OUR GROUP-BUYS.</h4>
+        <h5>This empowers new members of the group-buy to reach higher profit margins.</h5>
+        <img className = "bulletImage" src = {Bullets} />
+        <h4>WE REMOVE THE RESTRICTION OF MINIMUM ORDER QUANTITIES</h4>
+        <h5>So no costly bulk purchases and storage costs.</h5>
+        <img className = "bulletImage" src = {Bullets} />
+        <h4>OUR DEDICATED TEAM HAS DOZENS OF YEARS’ EXPERIENCE IN SOURCING AND RESELLING.</h4>
+        <h5>Shows in the fantastic products we work with.</h5>
+        <img className = "bulletImage" src = {Bullets} />
+        <h4>WE ARE WHOLE-HEARTEDLY COMMITTED TO OUR COMMUNITY.</h4>
+        <h5>Providing excellent customer service.</h5>
+        <img className = "bulletImage" src = {Bullets} />
+        <h4>WE ONLY LIST BRANDED LICENSED PRODUCTS.</h4>
+        <h5>Whether you are looking for wholesale games, merchandise, or toys. they will all be genuine.</h5>
+        <div>
+          <Link to="/buyer/sell"><button className="howItWorks__button">Group Buy</button></Link>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         </div>
       </section>
       <section className="socialMission">
@@ -70,7 +97,11 @@ const Home = () => {
         <h5>Success for us is marked by every single person who joins our community, as together we have a stronger foot hold to compete against large and established businesses.</h5>
         <h5>We encourage our members to join forces through the ‘Share it. Profit’ scheme, providing stability, empowerment and equality.</h5>
         <div className="socialMission__contents">
+<<<<<<< HEAD
           <img className="buying__logo" src={SaveBuy} alt="" />
+=======
+          <img className="buying__logo" src={SaveBuy} alt=""  />
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         </div>
         <h5>A key part of Trisquare’s vision is the ‘Share it. Profit’ scheme. Supplier and buyers can share a Group Buy campaign via social media to affiliate a larger audience and increase economies of scale. This is a great way to support the Trisquare movement.</h5>
       </section>

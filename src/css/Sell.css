@@ -1,12 +1,18 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .sell{
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
     margin-top:160px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__form{
     display: flex;
@@ -21,7 +27,10 @@
     box-shadow: 0 0 0.8rem #555;
     margin: auto;
     border-radius: 1rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__container{
     display: flex;
@@ -31,7 +40,10 @@
     margin-top: 3rem;
     margin-bottom: 3rem;
     border-radius: 1rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__heading{
     width: 100%;
@@ -42,26 +54,40 @@
     justify-content: center;
     flex-direction: column;
     padding: 25px 0px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__headingMajor{
     color: white;
     margin-bottom: 1rem; 
+<<<<<<< HEAD
     font-size: 2rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+=======
+    font-size: 2.2rem;
+    text-align: center;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__headerMinor{
     color: white;
     font-size: 1.2rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__formHeading{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(73, 73, 73);
     text-decoration: underline;
     text-align: center;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__dp{
     display: flex;
@@ -71,18 +97,28 @@
     justify-content: center;
     margin: 3rem;
     border-radius: 50%;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__upload{
     display: flex;
     position: absolute;
     color: rgb(2, 110, 2);
+<<<<<<< HEAD
     font-size: 1.2rem;
+=======
+    font-size: 2rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     top: 70%;
     left: 40%;
     opacity: 1;
     cursor: default;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__uploadLink{
     border: 1px solid lightgray;
@@ -90,7 +126,10 @@
     background: #3f611d;
     color: white;
     margin-bottom: 2rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 input[type = number]::-webkit-inner-spin-button,
 input[type = number]::-webkit-outer-spin-button{
@@ -109,13 +148,20 @@ input[type = number]::-webkit-outer-spin-button{
     color: rgb(59, 59, 59);
     font-weight: 500;
     letter-spacing: 1px;
+<<<<<<< HEAD
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
+=======
+    font-size: larger;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .input::placeholder{
     color: rgb(138, 137, 137);
     font-weight: 400;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .smallInput{
     width: 100%;
@@ -131,8 +177,12 @@ input[type = number]::-webkit-outer-spin-button{
     color: rgb(59, 59, 59);
     font-weight: 500;
     letter-spacing: 1px;
+<<<<<<< HEAD
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
+=======
+    font-size: larger;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .inputDiv{
     display: flex;
@@ -141,7 +191,10 @@ input[type = number]::-webkit-outer-spin-button{
     float: left;
     width: 100%;
     margin-left: -18px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__address{
     width: 100%;
@@ -155,15 +208,24 @@ input[type = number]::-webkit-outer-spin-button{
     color: rgb(59, 59, 59);
     font-weight: 500;
     letter-spacing: 1px;
+<<<<<<< HEAD
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     overflow-y: scroll;
     font-family: 'Poppins', sans-serif;
+=======
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__address::placeholder{
     color: rgb(138, 137, 137);
     font-weight: 400;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__submitButton{
     width: 100%;
@@ -177,7 +239,10 @@ input[type = number]::-webkit-outer-spin-button{
     border-radius: 5px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__submitButton:hover{
     background:  #3a581b;
@@ -194,11 +259,18 @@ input[type = number]::-webkit-outer-spin-button{
 }
 .sell__resetPassword{
     text-decoration: none;
+<<<<<<< HEAD
     font-size: 1.2rem;
     transition: 0.2s;
     color: #004a6d;
     padding-left: 5px;
     font-family: 'Poppins', sans-serif;
+=======
+    font-size: larger;
+    transition: 0.2s;
+    color: #004a6d;
+    padding-left: 5px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .sell__resetPassword:hover{
     color:  cyan;
@@ -206,39 +278,59 @@ input[type = number]::-webkit-outer-spin-button{
 .sell__bottom{
     color: gray;
     font-weight: 400 !important;
+<<<<<<< HEAD
     font-size: 0.8rem;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
 }
 .link{
     /* font-weight: bold; */
+=======
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.link{
+    font-weight: bold;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .file_button_container,
 .file_button_container input {
      height: 35px;
      width: 247px;
      margin-left: 50px;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .file_button_container {
      background: transparent url(http://i.stack.imgur.com/BT5AB.png) center no-repeat;
      display: flex;
      justify-content: center;
      align-items: center;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .file_button_container input {
      opacity: 0;
      font-size: 0.8rem;
      line-height: 2rem;
      cursor: pointer;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .smallerInput{
      width: 19% !important;
      display: inline-flex;
      margin-right: 3%;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .label{
      display: flex;
@@ -248,35 +340,55 @@ input[type = number]::-webkit-outer-spin-button{
      color: rgb(97, 97, 97);
      text-decoration: underline;
      margin-top: 2rem;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__country{
      display: flex;
      align-items: flex-start !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .imageLabel{
     width: auto;
     padding: 10px;
+<<<<<<< HEAD
     /* font-size: 1rem; */
+=======
+    font-size: 1rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     margin-top: -10px;
     outline: none;
     outline-style: none;
     border: none;
     border-bottom: 2px solid gray;
     color: rgb(138, 137, 137);
+<<<<<<< HEAD
     /* font-weight: 500; */
     letter-spacing: 1px;
     font-size: 1.2rem;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+=======
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+    text-transform: capitalize;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__productImage{
      display: flex;
      padding-top: 2rem;
      flex-direction: row;
      align-items: center;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__shippingPrice{
      display: flex;
@@ -284,7 +396,10 @@ input[type = number]::-webkit-outer-spin-button{
      justify-content: space-between;
      align-items: center;
      width: 100%;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .inputSpecial{
      width: 220px !important;
@@ -292,28 +407,43 @@ input[type = number]::-webkit-outer-spin-button{
      border: 2px solid gray;
      background: #fff;
      text-transform: none !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__selectCategories{
      color: gray;
      font-weight: 400;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
  }
  .sell__deadline{
      color: gray;
      font-family: 'Poppins', sans-serif;
+=======
+ }
+ .sell__deadline{
+     color: gray;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__wholesale{
      display: flex;
      justify-content: space-between;
      align-items: center;
      width: 100%;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__divs{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .inputs1{
     display: flex;
@@ -327,10 +457,16 @@ input[type = number]::-webkit-outer-spin-button{
     outline-style: none;
     border: none;
     color: rgb(59, 59, 59);
+<<<<<<< HEAD
     /* font-weight: 500; */
     letter-spacing: 1px;
     font-size: larger;
     font-family: 'Poppins', sans-serif;
+=======
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
  .sell__divs1{
      display: inline-flex;
@@ -338,12 +474,18 @@ input[type = number]::-webkit-outer-spin-button{
      width: auto;
      /* align-items: flex-start; */
      justify-content: space-between !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__unitDiv{
      display: inline;
      width: auto !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
  }
  .sell__wholesaleUnit{
@@ -351,7 +493,10 @@ input[type = number]::-webkit-outer-spin-button{
      width: auto !important;
      align-items: flex-start !important;
      justify-content: flex-start !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .inputs0{
     display: flex;
@@ -365,11 +510,18 @@ input[type = number]::-webkit-outer-spin-button{
     outline-style: none;
     border: none;
     color: rgb(59, 59, 59);
+<<<<<<< HEAD
     /* font-weight: 500; */
     letter-spacing: 1px;
     font-size: larger;
     margin-bottom: -2rem;
     font-family: 'Poppins', sans-serif;
+=======
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: larger;
+    margin-bottom: -2rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 
  }
  .sell__Address{
@@ -377,6 +529,7 @@ input[type = number]::-webkit-outer-spin-button{
      width: 100%;
      justify-content: space-between;
      align-items: center;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
  }
  .sell__postalCode{
@@ -386,13 +539,24 @@ input[type = number]::-webkit-outer-spin-button{
  .countries{
      max-width: 300px;
      font-family: 'Poppins', sans-serif;
+=======
+ }
+ .sell__postalCode{
+     max-width: 300px;
+ }
+ .countries{
+     max-width: 300px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__shippingPrice{
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .sell__continents__price{
      display: flex;
@@ -401,7 +565,10 @@ input[type = number]::-webkit-outer-spin-button{
      align-items: center;
      flex-direction: row;
      margin: 10px 0;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .disabledPriceTag{
      background-color: lightgray !important;
@@ -410,16 +577,22 @@ input[type = number]::-webkit-outer-spin-button{
      flex: 0.15 !important;
      text-align: start !important;
      justify-content: center !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
      font-size: 0.8rem !important;
     margin-bottom: -7px;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .pricetag{
      display: flex !important;
      text-align: start !important;
      width: 100% !important;
      flex: 0.5 !important;
+<<<<<<< HEAD
      font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  .priceLabel{
      display: flex !important;
@@ -429,12 +602,18 @@ input[type = number]::-webkit-outer-spin-button{
      border-bottom: 2px solid gray !important;
      /* text-align: center !important; */
      text-align: start !important;
+<<<<<<< HEAD
      font-size: 0.8rem !important;
      color: gray;
+=======
+     font-size: 1.5rem !important;
+     color: rgb(97, 97, 97);
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
      text-decoration: underline;
      margin-top: 0rem;
      align-items: center;
      justify-content: center;
+<<<<<<< HEAD
      padding-bottom: 2px;
      padding-top: 15px;
      font-weight: 200 !important;
@@ -512,6 +691,8 @@ input[type = number]::-webkit-outer-spin-button{
     /* .aboutTheProduct{
         font-size: 0.8rem !important;
     } */
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }
  @media only screen and (max-width : 600px){
     .sell__form{
@@ -533,21 +714,36 @@ input[type = number]::-webkit-outer-spin-button{
         font-size: 1.8rem;
     }
     .sell__headerMinor{
+<<<<<<< HEAD
         font-size: 0.8rem;
+=======
+        font-size: 1rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         font-weight: 500;
         margin-bottom: 0.5rem;
     }
     .sell__formHeading{
+<<<<<<< HEAD
         font-size: 1rem;
     }
     .input {
         font-size: 0.8rem !important;
+=======
+        font-size: 1.2rem;
+    }
+    .input {
+        font-size: 0.95rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         margin: 10px 15px !important;
         border-bottom: 1px solid gray !important;
         text-transform: none !important;
     }
     .sell__address{
+<<<<<<< HEAD
         font-size: 0.8rem;
+=======
+        font-size: 0.95rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     .sell__submitButton{
         padding: 10px;
@@ -580,7 +776,11 @@ input[type = number]::-webkit-outer-spin-button{
      }
      .smallerInput{
          width: 18% !important;
+<<<<<<< HEAD
          font-size: 0.8rem !important;
+=======
+         font-size: 0.9rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
          margin-right: 0% !important;
          padding-left: 4px;
          padding-right: 4px;
@@ -589,7 +789,11 @@ input[type = number]::-webkit-outer-spin-button{
          display: flex;
          width: 100%;
          align-items: flex-start;
+<<<<<<< HEAD
          font-size: 1rem !important;
+=======
+         font-size: 1.1rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
          color: rgb(97, 97, 97);
          text-decoration: underline;
          margin-top: 2rem;
@@ -602,7 +806,11 @@ input[type = number]::-webkit-outer-spin-button{
         border-bottom: 1px solid gray !important;
         font-weight: 400;
         margin-right: 15px !important;
+<<<<<<< HEAD
         font-size: 0.8rem !important;
+=======
+        font-size: 0.95rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         margin-left: -10px;
         padding-left: 5px;
      }
@@ -653,7 +861,11 @@ input[type = number]::-webkit-outer-spin-button{
         padding: 0 0px;
         padding-top: 5px !important;
         padding-bottom: 5px !important;
+<<<<<<< HEAD
         font-size: 0.5rem;
+=======
+        font-size: 1rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         outline: none;
         outline-style: none;
         border: none;
@@ -692,9 +904,15 @@ input[type = number]::-webkit-outer-spin-button{
         outline-style: none;
         border: none;
         color: rgb(59, 59, 59);
+<<<<<<< HEAD
         font-weight: 400;
         letter-spacing: 1px;
         /* font-size: larger; */
+=======
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: larger;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         margin-bottom: -2rem;
     
      }
@@ -723,6 +941,7 @@ input[type = number]::-webkit-outer-spin-button{
          border-bottom: 1px solid gray !important;
      }
      .sell__continents__price > .priceLabel >h4{
+<<<<<<< HEAD
          font-size: 0.5rem !important;
          font-weight: 300;
      }
@@ -745,11 +964,25 @@ input[type = number]::-webkit-outer-spin-button{
     }
      .pricetag{
          font-size: 0.5rem !important;
+=======
+         font-size: 0.7rem;
+         font-weight: 300;
+     }
+     .priceLabel{
+         margin-top: 0px;
+         margin-bottom: -12px;
+     }
+     .pricetag{
+         font-size: 0.6rem !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
          margin-bottom: -7px;
          margin-left: 2px;
          margin-right: 2px;
      }
+<<<<<<< HEAD
      /* .aboutTheProduct{
          font-size: 0.8rem !important;
      } */
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
  }

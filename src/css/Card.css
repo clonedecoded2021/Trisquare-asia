@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .card{
     display: inline-flex;
     justify-content: center;
@@ -12,6 +15,7 @@
     margin: 35px 15px 0 15px;
     background: white;
     transition: all 0.5s;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .card__delete{
@@ -24,14 +28,21 @@
 .card__delete:hover{
     color: white;
     background-color: red;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .card:hover{
     box-shadow: 0px 25px 20px rgb(136, 136, 136);
     transform: translateY(-3px);
 }
 .card > img {
+<<<<<<< HEAD
     width: 160px;
     height: 160px;
+=======
+    width: 200px;
+    height: 200px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     object-fit: contain;
 }
 .card__details{
@@ -41,7 +52,11 @@
     flex-direction: column;
 }
 .card__details > h4 {
+<<<<<<< HEAD
     margin: 5px 0px;
+=======
+    margin: 10px 0px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     height: 3rem;
     text-align: center;
 }
@@ -206,8 +221,13 @@
     display:flex;
     align-items: center;
     justify-content:space-between;
+<<<<<<< HEAD
     width: 86%;
     padding-left: 22px !important;
+=======
+    width: 100%;
+    padding-left: 0px !important;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     color: rgb(78, 78, 78);
     padding-top: 10px;
 }
@@ -219,10 +239,16 @@
     padding: 10px;
     padding-top: 0px !important;
 }
+<<<<<<< HEAD
 
 @media only screen and (max-width: 1024px){
     .card{
         width: 240px;
+=======
+@media only screen and (max-width: 768px){
+    .card{
+        width: 230px;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         height: auto;
         border: 1px solid black;
         border-radius: 10px;
@@ -231,16 +257,24 @@
         transition: all 0.5s;
     }
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 768px){
     .card{
         width: 230px;
         height: 350px;
+=======
+@media only screen and (max-width: 1024px){
+    .card{
+        width: 240px;
+        height: auto;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         border: 1px solid black;
         border-radius: 10px;
         margin: 35px 5px 0 5px;
         background: white;
         transition: all 0.5s;
     }
+<<<<<<< HEAD
     .card > img {
         width: 140px;
         height: 140px;
@@ -262,3 +296,7 @@
         text-align: center;
     }
 }
+=======
+}
+
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d

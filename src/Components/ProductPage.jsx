@@ -24,11 +24,19 @@ function ProductPage(props) {
                     <div className="lockIcons">
                         {props.userIn ? <LockOpenOutlinedIcon /> : <LockOutlinedIcon />}
                     </div>
+<<<<<<< HEAD
                     <h1 className="productPage__category">{productDetails[0].productCategory}</h1>
                 </div>
                 <div className="productPage__mainSection">
                     <div className="product__leftDiv">
                         <img className="productpage__image" src={`https://trisquare.asia/buyer/uploads/${productDetails[0].product_image_name}`} alt="" />
+=======
+                    <h1 className="productPage__category">{productDetails.productCategory}</h1>
+                </div>
+                <div className="productPage__mainSection">
+                    <div className="product__leftDiv">
+                        <img className="productpage__image" src={process.env.PUBLIC_URL + `/uploads/${productDetails[0].product_image_name}`} alt="" />
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                         <Links className="productPage__links" />
                     </div>
                     <div className="product__rightDiv">
@@ -44,7 +52,11 @@ function ProductPage(props) {
         )
     } return (
         <div className="container">
+<<<<<<< HEAD
             <div className="loader">
+=======
+            <div class="loader">
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 <span></span>
                 <span></span>
                 <span></span>

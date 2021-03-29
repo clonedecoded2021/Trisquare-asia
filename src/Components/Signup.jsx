@@ -131,7 +131,11 @@ function Signup({ countryName }) {
           <input
             className="signup__mobile input"
             type="number"
+<<<<<<< HEAD
             // pattern="[0-9]{10}"
+=======
+            pattern="[0-9]{10}"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
             placeholder="Enter Your Mobile Number"
             value={mob}
             required
@@ -161,8 +165,12 @@ function Signup({ countryName }) {
             className="signup__postalCode input"
             type="text"
             name=""
+<<<<<<< HEAD
             // pattern="[0-9a-zA-Z]{1-10}"
             maxLength="10"
+=======
+            pattern="[0-9a-zA-Z]{6}"
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
             placeholder="Postal Code"
             value={pin}
             required

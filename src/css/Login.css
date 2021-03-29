@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 .login{
     display: flex;
     align-items: center;
@@ -10,7 +13,10 @@
     top: 0;
     left: 0;
     margin-top: 160px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__container{
     display: flex;
@@ -26,23 +32,35 @@
     left: 50%;
     transform: translate(-50%, 7%);
     box-shadow: 0 0 1rem #777;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__heading{
     margin-bottom: 30px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(85, 85, 85);
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__form{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__label{
     text-align: start;
     position: absolute;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__input{
     width: 93.4%;
@@ -56,7 +74,10 @@
     outline: none;
     outline-style: none;
     color: rgb(68, 68, 68);
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__SubmitButton{
     width: 100%;
@@ -73,7 +94,10 @@
     transition: all 0.2s;
     margin-top: 2rem;
     margin-bottom: -1rem;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__SubmitButton:hover{
     color: white;
@@ -86,7 +110,10 @@
     font-size: large;
     font-weight: 450;
     color: rgb(77, 77, 77);
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__resetPassword{
     text-decoration: none;
@@ -94,7 +121,10 @@
     transition: 0.2s;
     color: #476e20;
     padding-left: 5px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__resetPassword:hover{
     color:  #69a32f;
@@ -104,11 +134,17 @@
     font-weight: 400 !important;
     font-size: 1rem;
     margin-bottom: 15px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .link{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+=======
+}
+.link{
+    font-weight: bold;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .login__emptyDiv{
     width: 100%;
@@ -121,7 +157,10 @@
     width: 100%;
     height: 100vh;
     position: relative;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .box{
     width: 400px;
@@ -138,11 +177,17 @@
     color: #fff;
     text-align: center;
     text-transform: capitalize;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
 }
 .box .inputBox{
     position: relative;
     font-family: 'Poppins', sans-serif;
+=======
+}
+.box .inputBox{
+    position: relative;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .box .inputBox input{
     width: 100%;
@@ -156,7 +201,10 @@
     background: transparent;
     outline: none;
     outline-style: none;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .box .inputBox input:focus ~ label,
 .box .inputBox input:valid ~ label{
@@ -175,7 +223,10 @@
     color: #fff;
     transition: 0.5s;
     cursor: pointer;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .box input[type = "submit"]{
     background: transparent;
@@ -187,7 +238,10 @@
     padding: 8px 16px;
     border-radius: 5px;
     font-size: 14px;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 @media only screen and (max-width:600px){
     .login__container{

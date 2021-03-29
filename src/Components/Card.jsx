@@ -4,10 +4,15 @@ import "../css/Card.css";
 import { useDispatch } from 'react-redux';
 import reducer from '../reducer'
 import axios from 'axios';
+<<<<<<< HEAD
 import { AiOutlineDelete } from 'react-icons/ai'
 
 function Card({ src, title, product, Pid, sold }) {
   const [admin, setAdmin] = useState(false)
+=======
+
+function Card({ src, title, product, Pid, sold }) {
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   const [widths, setWidths] = useState(0);
   const [price, setPrice] = useState(product.price1);
 
@@ -61,6 +66,7 @@ function Card({ src, title, product, Pid, sold }) {
     // }
     // axios.put("https://trisquare.asia/api/product_data/price/update", data).then((res) => console.log(res))
   }, [Pid, widths])
+<<<<<<< HEAD
 
   useEffect(async () => {
     const loginstatus = localStorage.getItem("_trisquarestorage")
@@ -71,6 +77,8 @@ function Card({ src, title, product, Pid, sold }) {
       setAdmin(false)
     }
   }, [])
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   const dispatch = useDispatch(reducer);
   const reachProduct = () => {
     dispatch({
@@ -78,6 +86,7 @@ function Card({ src, title, product, Pid, sold }) {
       productId: Pid,
     })
   }
+<<<<<<< HEAD
   const dlt = () => {
     const DATA = {
       id: Pid,
@@ -88,13 +97,18 @@ function Card({ src, title, product, Pid, sold }) {
     })
     window.location.reload()
   }
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   // const decline = () => {
   //   db.collection("preOrders").doc(`${Pid}`).delete()
   // }
   return (
     <div className="card">
       <img src={process.env.PUBLIC_URL + `/uploads/${src}`} />
+<<<<<<< HEAD
       {admin ? <AiOutlineDelete className="card__delete" onClick={dlt} /> : ""}
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       <div className="card__details">
         <h4>{title}</h4>
         <div className="container2">
@@ -105,12 +119,17 @@ function Card({ src, title, product, Pid, sold }) {
               <h5>${product.price3}</h5>
               <h5>${product.price4}</h5>
             </div>
+<<<<<<< HEAD
             <div className="percent">
+=======
+            <div class="percent">
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
               <div className="progress" style={{ width: `${widths}%` }}></div>
             </div>
             <div className="container3__units">
               <div className="container3__units__unit">
                 <h5 className="productUnit">{product.units1}</h5>
+<<<<<<< HEAD
                 <h5>{product.units}units</h5>
               </div>
               <div className="container3__units__unit">
@@ -124,6 +143,21 @@ function Card({ src, title, product, Pid, sold }) {
               <div className="container3__units__unit">
                 <h5 className="productUnit">{product.units4}</h5>
                 <h5>{product.units}units</h5>
+=======
+                <h5>{product.units}</h5>
+              </div>
+              <div className="container3__units__unit">
+                <h5 className="productUnit">{product.units2}</h5>
+                <h5>{product.units}</h5>
+              </div>
+              <div className="container3__units__unit">
+                <h5 className="productUnit">{product.units3}</h5>
+                <h5>{product.units}</h5>
+              </div>
+              <div className="container3__units__unit">
+                <h5 className="productUnit">{product.units4}</h5>
+                <h5>{product.units}</h5>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
               </div>
             </div>
           </div>

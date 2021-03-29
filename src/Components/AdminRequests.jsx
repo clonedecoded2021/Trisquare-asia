@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import '../css/AdminRequests.css';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import Modal from "react-modal";
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 import Image from '../Images/logo.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GiSplitCross } from 'react-icons/gi';
 import axios from 'axios';
 
 const ProductDetails = ({ Pid, email, request }) => {
+<<<<<<< HEAD
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [emailMessage, setEmailMessage] = useState("")
     const decline = () => {
@@ -18,10 +22,15 @@ const ProductDetails = ({ Pid, email, request }) => {
             email: email,
             emailMessage: emailMessage,
         }).then(() => alert("Email Sent To User."))
+=======
+    const decline = () => {
+        axios.delete(`https://trisquare.asia/api/product_request/delete/${Pid}`).then((res) => console.log("deleted"))
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     }
     return (
         <div className="admin__container">
             <div className='admin__products'>
+<<<<<<< HEAD
                 <div className="admin__productAbout admin__productRequestAbout" onClick={() => setModalIsOpen(true)}>
                     <p className="admin__productName request__para">{`The Customer ${email} is requested for a product :- ${request}`}</p>
                 </div>
@@ -54,6 +63,15 @@ const ProductDetails = ({ Pid, email, request }) => {
                     <button className="adminEmailSend" onClick={sendEmail}>Send</button>
                 </div>
             </Modal>
+=======
+                <div className="admin__productAbout">
+                    <h4 className="admin__productName request__para">{`The Customer ${email} is requested for a product :- ${request}`}</h4>
+                </div>
+                <div className="admin__buttons">
+                    <button className="admin__ignore requestPage__button" onClick={decline}>Ignore</button>
+                </div>
+            </div>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         </div>)
 }
 
@@ -65,7 +83,11 @@ const AdminRequests = ({ products }) => {
         const loginstatus = localStorage.getItem("_trisquarestorage")
         if (loginstatus) {
             const newValue = JSON.parse(loginstatus)
+<<<<<<< HEAD
             newValue.data[0].email === "buyer@trisquare.asia" ? setAdmin(true) : setAdmin(true);
+=======
+            newValue.data[0].email === "buyer@trisquare.asia" ? setAdmin(true) : setAdmin(false);
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         } else {
             setAdmin(false)
         }
@@ -102,8 +124,11 @@ const AdminRequests = ({ products }) => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption active"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__navbar" style={{ display: `${disp}`, transition: "0.3s" }}>
@@ -112,8 +137,11 @@ const AdminRequests = ({ products }) => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption active"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__mainPage">

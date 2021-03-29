@@ -19,7 +19,11 @@
     box-shadow: 2px 4px 20px 15px rgb(255, 214, 214);
     padding: 1.5rem;
 }
+<<<<<<< HEAD
 .forgotPage__modal > h4{
+=======
+h4{
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     font-size: 1.5rem;
     color: rgb(92, 92, 92);
     padding: 10px;

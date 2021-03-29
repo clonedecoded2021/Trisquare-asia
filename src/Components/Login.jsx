@@ -16,20 +16,30 @@ function Login() {
   const signin = (e) => {
     e.preventDefault();
     Axios.post("https://trisquare.asia/api/login", {
+<<<<<<< HEAD
       // Axios.post("http://localhost:3001/api/login", {
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       email: email,
       password: password,
     }).then(response => {
       dispatch({
         type: "login Success",
       })
+<<<<<<< HEAD
       // console.log(response)
+=======
+      console.log(response)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       localStorage.setItem("_trisquarestorage", JSON.stringify(response))
       if (response.data.message) {
         alert(response.data.message)
       } else {
         history.push("/buyer/");
+<<<<<<< HEAD
         window.location.reload()
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
       }
     })
     setEmail("");

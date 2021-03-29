@@ -2,7 +2,11 @@
   "name": "trisquaresite",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "/buyer/",
+=======
+  "homepage": ".",
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
@@ -52,4 +56,8 @@
       "last 1 safari version"
     ]
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d

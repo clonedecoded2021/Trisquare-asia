@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 /* *{
     background: rgba(50,50,50,0.01);
 } */
+=======
+*{
+    background: rgba(50,50,50,0.01);
+}
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 ::-webkit-scrollbar{
     display: none;
 }

@@ -1,5 +1,9 @@
     Options -MultiViews
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
+<<<<<<< HEAD
     RewriteRule ^ index.html [QSA,L]
     RewriteBase /
+=======
+    RewriteRule ^ index.html [QSA,L]
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d

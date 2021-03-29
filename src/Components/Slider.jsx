@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
+=======
+import React, { useState } from "react";
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Slider = ({ SliderData, button }) => {
   const [current, setCurrent] = useState(0);
+<<<<<<< HEAD
   const [userApproved, setUserApproved] = useState(0)
   // const [interval , setInterval] = useState(0)
   useEffect(() => {
@@ -25,16 +30,22 @@ const Slider = ({ SliderData, button }) => {
   }
   const length = SliderData.length;
 
+=======
+  const length = SliderData.length;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+<<<<<<< HEAD
 
   setTimeout(nextSlide, 8000);
 
 
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
   if (!Array.isArray(SliderData) || SliderData.length <= 0) {
     return null;
   }
@@ -49,10 +60,17 @@ const Slider = ({ SliderData, button }) => {
           PRICES
         </h1>
         <button className="home__main__button">
+<<<<<<< HEAD
           {button === "Sell" ? <Link to="/buyer/sell" className="home__main__link" onClick={notAuthorized}>
             SELL
             </Link> : <Link to="/buyer/cartPage" className="home__main__link">
             GROUP BUY
+=======
+          {button === "Sell" ? <Link to="/buyer/sell" className="home__main__link">
+            Sell
+            </Link> : <Link to="/buyer/cartPage" className="home__main__link">
+            Group Buy
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
             </Link>}
         </button>
         {SliderData?.map((slide, index) => {

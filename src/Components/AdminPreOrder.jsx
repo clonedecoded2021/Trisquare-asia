@@ -10,6 +10,7 @@ import axios from 'axios';
 const ProductDetails = ({ Pid, productUrl, productName, email, mob, preOrder }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [currPrice, setCurrPrice] = useState(0);
+<<<<<<< HEAD
     const [status, setStatus] = useState("");
 
     const decline = () => {
@@ -57,6 +58,22 @@ const ProductDetails = ({ Pid, productUrl, productName, email, mob, preOrder }) 
                 
                 </div>
 
+=======
+
+    const decline = () => {
+        axios.delete(`https://trisquare.asia/api/preorders/delete/${Pid}`).then((res) => console.log("deleted"))
+    }
+    return (
+        <div className="admin__container">
+            <div className={currPrice <= preOrder.TargetPrice ? "admin__products1" : "admin__products"}>
+                <img className="productImage" style={{ cursor: "pointer", border: "1px solid gray", padding: "3px", borderRadius: "5px" }} onClick={() => setModalIsOpen(true)} src={process.env.PUBLIC_URL + `/uploads/${productUrl}`} alt="image" />
+                <div className="admin__productAbout">
+                    <p>{`${preOrder.firstName} requested  ${preOrder.productQuantity} units of ${productName}  at target price $${preOrder.targetPrice}`}</p>
+                </div>
+                <div className="admin__buttons">
+                    <button className="admin__ignore preorder__button" onClick={decline}>REMOVE</button>
+                </div>
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                 <Modal
                     className="orderModal"
                     isOpen={modalIsOpen}
@@ -88,12 +105,20 @@ const ProductDetails = ({ Pid, productUrl, productName, email, mob, preOrder }) 
 
 
 
+<<<<<<< HEAD
 const AdminPreOrder = () => {
+=======
+const AdminPreOrder = ({ product }) => {
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     const [admin, setAdmin] = useState(false);
     const [preOrders, setPreOrders] = useState();
     const history = useHistory();
     const [disp, setDisp] = useState("none");
+<<<<<<< HEAD
     // console.log(product)
+=======
+    console.log(product)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     useEffect(() => {
         const loginstatus = localStorage.getItem("_trisquarestorage")
         if (loginstatus) {
@@ -114,7 +139,11 @@ const AdminPreOrder = () => {
     useEffect(() => {
         axios.get("https://trisquare.asia/api/preorders_data").then(res => {
             setPreOrders(res.data)
+<<<<<<< HEAD
             // console.log(res.data)
+=======
+            console.log(res.data)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
         })
     }, [])
 
@@ -139,8 +168,11 @@ const AdminPreOrder = () => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__navbar" style={{ display: `${disp}`, transition: "0.3s" }}>
@@ -149,15 +181,22 @@ const AdminPreOrder = () => {
                     <Link to='/buyer/admin/purchases' className="admin__navbarOption"><h4>Purchases</h4></Link>
                     <Link to='/buyer/admin/requests' className="admin__navbarOption"><h4>Product Requests</h4></Link>
                     <Link to='/buyer/admin/verifyUser' className="admin__navbarOption"><h4>Verify Users</h4></Link>
+<<<<<<< HEAD
                     <Link to='/buyer/admin/buyers' className="admin__navbarOption"><h4>All Buyers</h4></Link>
                     <Link to='/buyer/admin/sellers' className="admin__navbarOption"><h4>All Sellers</h4></Link>
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     <img src={Image} className="admin__image" />
                 </div>
                 <div className="admin__mainPage">
                     <h4 className="admin__heading">Pre-Orders</h4>
                     {preOrders && preOrders.map((preOrder) =>
                     (
+<<<<<<< HEAD
                         <ProductDetails key={preOrder.id} Pid={preOrder.product_id} productUrl={preOrder.product_image} productName={preOrder.productName} email={preOrder.email} mob={preOrder.mob} preOrder={preOrder}  />)
+=======
+                        <ProductDetails key={preOrder.id} Pid={preOrder.id} productUrl={preOrder.product_image} productName={preOrder.productName} email={preOrder.email} mob={preOrder.mob} preOrder={preOrder} />)
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
                     )
                     }
                 </div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
 
 .links{
@@ -7,17 +8,32 @@
     background: white;
     justify-content: center;
     margin-left: 5%;
+=======
+.links{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    background: rgb(212, 211, 211);
+    justify-content: center;
+    margin-left: 11.5rem;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     position: relative;
     right: 0;
     align-items: flex-end;
     margin-bottom: 1rem;
     align-items: center;
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
     /* border: 1px solid gray;
     border-radius: 5px; */
 }
 .links__heading{
     color: rgb(66, 66, 66);
+=======
+}
+.links__heading{
+    color: gray;
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
     text-shadow: 0 0 2rem #fff;
     font-weight: 500;
     font-size: 1.2rem;
@@ -29,10 +45,13 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+<<<<<<< HEAD
     text-decoration: none;
 }
 .links__anchor{
     text-decoration: none;
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
 .links__image{
     display: flex;
@@ -46,6 +65,7 @@
 .links__image:hover{
     transform: translateY(-8px);
 }
+<<<<<<< HEAD
 .anchor{
     display: flex;
     flex-direction: row;
@@ -60,10 +80,13 @@
     margin-left: -10px;
     margin-right: 8px;
 }
+=======
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 @media only screen and (max-width: 1300px){
     .links{
         margin-left: 2.5rem;
     }
+<<<<<<< HEAD
     .link__span{
         text-decoration: none;
         color: rgb(66, 66, 66);
@@ -147,4 +170,23 @@
         font-size: 0.5rem;
         padding-right: 4px;
     }
+=======
+}
+@media only screen and (max-width: 600px){
+    .links{
+        width: 100%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .links__heading{
+        font-size: 0.95rem;
+    }
+    .links__image{
+        height: 25px;
+        width: 25px;
+        object-fit: contain;
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+>>>>>>> a85fb8ab7f2ce7c020c083a6bd4c74167c3b4a7d
 }
