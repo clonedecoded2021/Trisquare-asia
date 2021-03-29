@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
+
+.admin_Request_Modal{
+    overflow-x: hidden;
+}
+.admin_Request_Modal_Description{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.adminProductLinkDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.adminProductLinkLabel_div{
+    width: 100px;
+}
+.adminProductRequests_div{
+    overflow-wrap: break-word;
+    width: 550px;
+    padding: 10px;
+}
+.adminProductRequests{
+    font-size: 20px;
+}
+.adminEmailMessage{
+    width: 700px;
+    height: 100px;
+    margin-top: 10px;
+}
+.adminEmailSend{
+    width: 50%;
+    height: 50px;
+    color: aliceblue;
+    background-color: #612020;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+.adminEmailSend:hover{
+    background-color: #8d0303;
+    color: antiquewhite;
+}
+.admin__productRequestAbout{
+    flex: 0.85;
+    /* margin: 5px; */
+    height: 40px;
+    overflow-y: auto;
+}
+.requestPage__button{
+    flex: 0.15;
+}
+.request__para{
+    color: gray;
+    font-size: 0.8rem;
+    padding-left: 0px;
+    cursor: pointer;
+}
+.admin_Request_Modal_Description{
+    width: 95% !important;
+}
+.adminProductLinkDiv{
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.adminProductLinkLabel_div{
+    display: flex !important;
+    width: 40% !important;
+    height: auto !important;
+}
+.adminProductRequests_div{
+    display: flex !important;
+    width: 60% !important;
+    height: auto !important;
+}
+.adminProductRequests{
+    font-size: 0.7rem !important;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+.productLink__modalHeading{
+    display: flex;
+    flex: 0.4;
+    font-size: 1rem;
+}
+.productLink__modalPara{
+    display: flex;
+    flex: 1;
+    width: 20% !important;
+    font-size: 0.7rem !important;
+    margin-left: -65px;
+}
+.adminEmailMessage{
+    width: 95%;
+    padding: 15px;
+    outline: none;
+    border: 1.5px solid rgb(75, 74, 74);
+    border-radius: 5px;
+    color: rgb(83, 83, 83);
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.adminEmailMessage::placeholder{
+    color: gray;
+}
+@media only screen and (max-width: 1025px){
+    .adminProductLinkLabel{
+        font-size: 16px;
+    }
+    .adminProductLinkLabel_div{
+        width: 100px;
+    }
+    .adminProductRequests_div{
+        width: 500px;
+    }
+    .adminProductRequests{
+        font-size: 15px;
+    }
+    .adminEmailMessage{
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 769px){
+    .adminProductRequests_div{
+        width: 350px;
+    }
+    .adminProductRequests{
+        font-size: 15px;
+    }
+    .adminEmailMessage{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+.request__para{
+    font-size: 0.6rem !important;
+    display: flex !important;
+    flex: 1 !important;
+    text-align: left;
+    }
+    .requestPage__button{
+        font-size: 0.6rem !important;
+    }
+    .admin_Request_Modal{
+        top: 50%;
+        height: 50%;
+    }
+    .adminProductLinkLabel{
+        font-size: 10px;
+    }
+    .adminProductLinkLabel_div{
+        width: 60px;
+    }
+    .adminProductRequests_div{
+        width: 250px;
+    }
+    .adminProductRequests{
+        font-size: 8px;
+    }
+    .adminEmailMessage{
+        width: 300px;
+        height: 150px;
+    }
+    
+}
+@media only screen and (max-width: 370px){
+    .admin_Request_Modal{
+        top: 50%;
+        height: 50%;
+    }
+    .adminProductLinkLabel{
+        font-size: 8px;
+    }
+    .adminProductLinkLabel_div{
+        width: 50px;
+    }
+    .adminProductRequests_div{
+        width: 220px;
+    }
+    .adminProductRequests{
+        font-size: 7px;
+    }
+    .adminEmailMessage{
+        width: 250px;
+        height: 150px;
+    }
+    
+}

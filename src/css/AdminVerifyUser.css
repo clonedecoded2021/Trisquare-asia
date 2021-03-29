@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
+
+.admin__userVerify{
+    margin: 10px;
+}
+.admin__userModalHeader{
+    margin-top: 0rem !important;
+}
+
+.orderModal__userDescription{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    height: 90%;
+    overflow-y: scroll;
+}
+.userDetails__rows{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 10%;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.userDetalis__header{
+    display: flex;
+    width: 35%;
+    align-items: left;
+    text-align: left;
+}
+.userDetails__span{
+    display: flex;
+    width: 65%;
+    align-items: left;
+    text-align: left;
+    font-size: 0.9rem;
+}

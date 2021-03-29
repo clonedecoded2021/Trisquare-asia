@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@600&display=swap');
+
+.emailVerification__link{
+    display: flex;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 126, 21);
+    color: rgb(0, 126, 21);
+    border-radius: 10px;
+    margin: 3rem;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
+}
+.emailVerification__link:hover{
+    color: rgb(3, 95, 18);
+    border: 1px solid rgb(3, 95, 18);
+    box-shadow: 0 0 2rem rgb(0, 126, 21);
+    background: rgba(0, 236, 0, 0.445);
+    text-decoration: underline;
+}
+
+.emailVerification__modal{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 70px 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 40vw;
+    height: 85px;
+    overflow-y: scroll;
+    z-index: 10000;
+    box-shadow: 0 10px 1rem #555;
+    border: none !important;
+    outline: none !important;
+    outline-style: none !important;
+    padding-bottom: 4rem;
+    opacity: 1 !important;
+    background: #fff;
+    /* margin: 3rem; */
+    margin-top: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.modal__heading{
+    font-size: 1.5rem;
+    color: rgb(0, 126, 21);
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media only screen and (max-width: 1024px){
+    .emailVerification__link{
+        border-radius: 15px;
+        margin: 2rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .emailVerification__modal{
+        width: 50vw;
+    }
+    .modal__heading{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .emailVerification__link{
+        border-radius: 10px;
+        margin: 1.5rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    .emailVerification__modal{
+        width: 50vw;
+    }
+    .modal__heading{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 600px){
+    .emailVerification__link{
+        border-radius: 5px;
+        margin: 1rem;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+    .emailVerification__modal{
+        width: 90vw;
+    }
+    .modal__heading{
+        font-size: 1.15rem;
+    }
+}
